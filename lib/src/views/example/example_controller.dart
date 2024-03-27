@@ -18,6 +18,7 @@ class ExampleController extends BaseController {
   onClose() async {
     super.onClose();
   }
+
   onGoBack() {
     Get.back();
   }
