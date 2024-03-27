@@ -23,12 +23,15 @@ class _StartupViewState extends State<StartupView> {
               body: SafeArea(
               bottom: true,
               top: true,
-              child: Center(
-                child: Column(
-                  children: [Text("Oops! Silahkan memperbarui versi aplikasimu")],
+                child: Center(
+                  child: Column(
+                    children: [
+                      Text("Oops! Silahkan memperbarui versi aplikasimu"),
+                    ],
+                  ),
                 ),
               ),
-            ))
+            )
           : Container(
               color: ColorStyle.whiteColor,
               width: Get.width,

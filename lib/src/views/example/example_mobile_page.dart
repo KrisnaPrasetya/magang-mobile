@@ -14,35 +14,39 @@ class ExampleMobilePage extends StatelessWidget {
           body: ScrollConfiguration(
             behavior: CustomDisableGlowBehavior(),
             child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Text(
-                    'Example Mobile Page',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
+              child: Container(
+                width: Get.width,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      height: 20,
                     ),
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Text(
-                    'This is an example page for mobile',
-                    style: TextStyle(
-                      fontSize: 16,
+                    Text(
+                      'Example Mobile Page',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  ElevatedButton(
-                    onPressed: controller.onGoBack,
-                    child: Text('Back'),
-                  ),
-                ],
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      'This is an example page for mobile',
+                      style: TextStyle(
+                        fontSize: 16,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    ElevatedButton(
+                      onPressed: controller.onGoBack,
+                      child: Text('Back'),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
