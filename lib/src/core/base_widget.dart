@@ -1,7 +1,7 @@
 // import 'package:btw_eduapp_global/src/debug/console/console.dart';
 // import 'package:btw_eduapp_global/src/widgets/index.dart';
 
-// import '../debug/console/console.dart';
+import '../debug/console/console.dart';
 
 import 'package:internship/src/core/base_import.dart';
 

@@ -2,6 +2,7 @@ import 'package:internship/src/core/base_import.dart';
 
 class ColorStyle {
   static const Color whiteColor = Color(0xFFFFFFFF);
+  static const Color blackColor = Color(0xFF000000);
 
   MaterialColor grayscaleRange = MaterialColor(
     0xFF558B2F,
