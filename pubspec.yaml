@@ -26,4 +26,9 @@ flutter:
 
   assets:
     - assets/
-    - assets/images/
+    - assets/gungsatria/
+    - assets/gungsatria/images
+    - assets/gungsatria/icons
+    - assets/krisna/
+    - assets/krisna/images
+    - assets/krisna/icons

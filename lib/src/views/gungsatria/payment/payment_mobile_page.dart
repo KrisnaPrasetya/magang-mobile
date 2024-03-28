@@ -25,7 +25,7 @@ class PaymentMobilePage extends StatelessWidget {
                     SizedBox(
                       height: 100,
                     ),
-                    Image.asset('assets/images/glasshour.png'),
+                    Image.asset('assets/images/gungsatria/glasshour.png'),
                     SizedBox(
                       height: 20,
                     ),
