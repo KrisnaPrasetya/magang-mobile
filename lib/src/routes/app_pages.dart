@@ -15,8 +15,16 @@ abstract class AppPages {
       name: AppRoutes.examplePage,
       page: () => const ExampleView(),
     ),
+
+    // gung satria
     GetPage(
-      name: AppRoutes.paymentPage,
+      name: AppRoutes.gPaymentPage,
+      page: () => const PaymentView(),
+    ),
+
+    // krisna
+    GetPage(
+      name: AppRoutes.kPaymentPage,
       page: () => const PaymentView(),
     ),
   ];

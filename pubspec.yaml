@@ -25,3 +25,12 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/gungsatria/
+    - assets/gungsatria/images
+    - assets/gungsatria/icons
+    - assets/krisna/
+    - assets/krisna/images
+    - assets/krisna/icons
