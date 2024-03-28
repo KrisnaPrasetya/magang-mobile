@@ -67,7 +67,7 @@ class PaymentMobilePage extends StatelessWidget {
                         horizontalPadding: 20,
                         width: Get.width,
                         onPressed: () {},
-                        child: Text('Lakukan Pembayaran',
+                        child: Text('Aku Sudah bayar',
                             style: TypographyStyle.body1Bold.copyWith(color: ColorStyle().grayscaleRange[500]))),
                   ],
                 ),

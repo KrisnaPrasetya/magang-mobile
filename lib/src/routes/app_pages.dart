@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import 'package:internship/src/views/example/example_view.dart';
 import 'package:internship/src/views/gungsatria/payment/payment_view.dart';
+import 'package:internship/src/views/gungsatria/waiting-room/waitingroom_view.dart';
 import 'package:internship/src/views/startup/startup_view.dart';
 
 part 'app_routes.dart';
@@ -21,6 +22,10 @@ abstract class AppPages {
       name: AppRoutes.gPaymentPage,
       page: () => const PaymentView(),
     ),
+    GetPage(
+      name: AppRoutes.gWaitingRoom,
+      page: () => const WaitingRoomView(),
+      ),
 
     // krisna
     GetPage(
