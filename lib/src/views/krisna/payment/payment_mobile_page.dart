@@ -16,9 +16,16 @@ class PaymentMobilePage extends StatelessWidget {
             behavior: CustomDisableGlowBehavior(),
             child: SingleChildScrollView(
               child: Container(
+                padding: EdgeInsets.symmetric(vertical: 20),
                 width: Get.width,
                 child: Column(
                   children: [
+                    SizedBox(
+                      height: 80,
+                    ),
+                    SvgPicture.asset(
+                      'assets/svg/LogoJam.svg',
+                    ),
                     ElevatedButton(
                       onPressed: controller.onGoBack,
                       child: Text('Back'),
