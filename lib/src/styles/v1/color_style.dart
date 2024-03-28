@@ -19,4 +19,51 @@ class ColorStyle {
       900: Color(0xFF1A1A1A),
     },
   );
+
+  MaterialColor redRange = MaterialColor(
+    0xFF558B2F,
+    <int, Color>{
+      50: Color(0xFFFFE9EE),
+      100: Color(0xFFFFC9D2),
+      200: Color(0xFFF99298),
+      400: Color(0xFFFF5569),
+      500: Color(0xFFFF002D),
+      600: Color(0xFFF6002E),
+      700: Color(0xFFE40028),
+      800: Color(0xFFD80020),
+      900: Color(0xFFC80013),
+    },
+  );
+
+  MaterialColor orangeRange = MaterialColor(
+    0xFF558B2F,
+    <int, Color>{
+      50: Color(0xFFFFF8E1),
+      100: Color(0xFFFFEBB2),
+      200: Color(0xFFFFDE81),
+      300: Color(0xFFFFD24E),
+      400: Color(0xFFFFC726),
+      500: Color(0xFFFEBE03),
+      600: Color(0xFFFEB000),
+      700: Color(0xFFFE9D00),
+      800: Color(0xFFFE8C01),
+      900: Color(0xFFD68E03),
+    },
+  );
+
+  MaterialColor blueRange = MaterialColor(
+    0xFF558B2F,
+    <int, Color>{
+      50: Color(0xFFE4F2FF),
+      100: Color(0xFFBEDFFF),
+      200: Color(0xFF95CCFF),
+      300: Color(0xFF6BB7FF),
+      400: Color(0xFF4EA8FF),
+      500: Color(0xFF3B99FD),
+      600: Color(0xFF398AEE),
+      700: Color(0xFF3578DB),
+      800: Color(0xFF3266C8),
+      900: Color(0xFF2C48A8),
+    },
+  );
 }
