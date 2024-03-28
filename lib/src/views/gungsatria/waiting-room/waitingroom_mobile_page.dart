@@ -12,27 +12,36 @@ class WaitingRoomMobilePage extends StatelessWidget {
       builder: (controller) => PopScope(
         canPop: controller.canPop,
         child: Scaffold(
+          extendBodyBehindAppBar: true,
+          appBar: AppBar(
+              backgroundColor: Colors.transparent,
+              leading: SvgPicture.asset(
+                "assets/gungsatria/icons/ic_back.svg",
+                fit: BoxFit.scaleDown,
+              )),
           backgroundColor: ColorStyle.whiteColor,
           body: ScrollConfiguration(
             behavior: CustomDisableGlowBehavior(),
             child: SingleChildScrollView(
               child: Container(
                 width: Get.width,
+                height: Get.height,
                 child: Column(
                   children: [
+                    // Container(
+                    //     alignment: Alignment.centerLeft,
+                    //     width: Get.width,
+                    //     color: HexColor('4169E1'),
+                    //     padding: EdgeInsets.only(left: 16, top: 16),
+                    //     child: SvgPicture.asset(
+                    //         "assets/gungsatria/icons/ic_back.svg")),
                     Container(
-                        alignment: Alignment.centerLeft,
-                        width: Get.width,
-                        color: HexColor('4169E1'),
-                        padding: EdgeInsets.only(left: 16, top: 16),
-                        child: SvgPicture.asset(
-                            "assets/gungsatria/icons/ic_back.svg")),
-                    Container(
-                      child:
-                          Image.asset('assets/gungsatria/images/student.png'),
+                      child: Image.asset(
+                        'assets/gungsatria/images/student.png',
+                        alignment: Alignment.bottomCenter,
+                      ),
                       color: HexColor('4169E1'),
-                      width: Get.width,
-                      height: 200,
+                      height: 300,
                     ),
                     SizedBox(
                       height: 32,
@@ -67,6 +76,8 @@ class WaitingRoomMobilePage extends StatelessWidget {
                             ),
                           ],
                         )),
+                        Container(
+                        ),
                   ],
                 ),
               ),
