@@ -1,6 +1,6 @@
 import 'package:internship/src/core/base_import.dart';
 
-class ExampleController extends BaseController {
+class WaitingController extends BaseController {
   bool canPop = true;
 
   @override
@@ -21,9 +21,5 @@ class ExampleController extends BaseController {
 
   onGoBack() {
     Get.back();
-  }
-
-  goToPayment() {
-    Get.toNamed(AppRoutes.paymentPage);
   }
 }

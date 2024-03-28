@@ -22,8 +22,4 @@ class PaymentController extends BaseController {
   onGoBack() {
     Get.back();
   }
-
-   goToExample() {
-    Get.back();
-  }
 }
