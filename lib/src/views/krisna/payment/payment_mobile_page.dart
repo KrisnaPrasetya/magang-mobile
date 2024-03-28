@@ -1,6 +1,6 @@
 import 'package:internship/src/core/base_import.dart';
 import 'package:internship/src/views/krisna/payment/payment_controller.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:internship/src/widgets/components/custom_button.dart';
 
 class PaymentMobilePage extends StatelessWidget {
   PaymentMobilePage({Key? key}) : super(key: key);
@@ -21,15 +21,56 @@ class PaymentMobilePage extends StatelessWidget {
                 child: Column(
                   children: [
                     SizedBox(
-                      height: 80,
+                      height: 120,
                     ),
-                    SvgPicture.asset(
-                      'assets/svg/LogoJam.svg',
+                    Image.asset(
+                      'assets/krisna/images/glasshour.png',
                     ),
-                    ElevatedButton(
-                      onPressed: controller.onGoBack,
-                      child: Text('Back'),
+                    SizedBox(
+                      height: 58,
                     ),
+                    Text("Selesaikan\nPembayaranmu !",
+                        textAlign: TextAlign.center,
+                        style: TypographyStyle.heading4Heavy
+                            .copyWith(color: ColorStyle().redRange[400])),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      child: Text(
+                        "Yuk segera selesaikan pembayaran kamu sebelum 1x24 jam, agar pembayaranmu tidak kadaluarsa",
+                        textAlign: TextAlign.center,
+                        style: TypographyStyle.body1DemiBold
+                            .copyWith(color: Colors.black),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 25,
+                    ),
+                    CustomButton(
+                        width: Get.width / 1.2,
+                        radius: 100,
+                        color: ColorStyle().orangeRange[900]!,
+                        onPressed: () {},
+                        child: Text(
+                          "Lakukan Pembayaran",
+                          style: TypographyStyle.body1Bold.copyWith(
+                              color: ColorStyle().grayscaleRange[200]),
+                        )),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    CustomButton(
+                        width: Get.width / 1.2,
+                        radius: 100,
+                        color: ColorStyle().grayscaleRange[50]!,
+                        onPressed: () {},
+                        child: Text(
+                          "Aku sudah Bayar",
+                          style: TypographyStyle.body1Bold.copyWith(
+                              color: ColorStyle().grayscaleRange[500]),
+                        )),
                   ],
                 ),
               ),
