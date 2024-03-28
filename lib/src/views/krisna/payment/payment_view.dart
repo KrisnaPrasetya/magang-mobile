@@ -1,5 +1,5 @@
 import 'package:internship/src/core/base_import.dart';
-import 'package:internship/src/views/gungsatria/payment/payment_controller.dart';
+import 'package:internship/src/views/krisna/payment/payment_controller.dart';
 
 import 'payment_mobile_page.dart';
 
