@@ -42,7 +42,7 @@ class ExampleMobilePage extends StatelessWidget {
                       height: 20,
                     ),
                     ElevatedButton(
-                      onPressed: controller.onGoBack,
+                      onPressed: controller.nextPage,
                       child: Text('Back'),
                     ),
                   ],

@@ -22,4 +22,8 @@ class ExampleController extends BaseController {
   onGoBack() {
     Get.back();
   }
+
+  nextPage() {
+    Get.offNamed(AppRoutes.gWaitingRoom);
+  }
 }
