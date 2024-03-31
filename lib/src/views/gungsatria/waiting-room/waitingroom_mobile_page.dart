@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:internship/src/core/base_import.dart';
 import 'package:internship/src/views/gungsatria/waiting-room/waitingroom_controller.dart';
@@ -25,7 +27,6 @@ class WaitingRoomMobilePage extends StatelessWidget {
             child: SingleChildScrollView(
               child: Container(
                 width: Get.width,
-                height: Get.height,
                 child: Column(
                   children: [
                     // Container(
@@ -71,13 +72,38 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                   color: ColorStyle().grayscaleRange[500]),
                               textAlign: TextAlign.center,
                             ),
-                            SizedBox(
-                              height: 8,
-                            ),
                           ],
                         )),
-                        Container(
+                    Container(
+                      child: Padding(
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+                        child: Container(
+                          padding: EdgeInsets.symmetric(horizontal: 12),
+                          width: Get.width,
+                          height: 500,
+                          decoration: BoxDecoration(
+                              color: HexColor('4169E1'),
+                              borderRadius: BorderRadius.circular(20)),
+                          child: Column(
+                            children: [
+                              SizedBox(
+                                height: 32,
+                              ),
+                              Text(
+                                textAlign: TextAlign.left,
+                                'Materi Seleksi Kompetensi Dasar (SKD)',
+                                style: TypographyStyle.heading5Bold
+                                    .copyWith(color: ColorStyle.whiteColor),
+                              ),
+                              SizedBox(
+                                height: 32,
+                              ),
+                            ],
+                          ),
                         ),
+                      ),
+                    ),
                   ],
                 ),
               ),

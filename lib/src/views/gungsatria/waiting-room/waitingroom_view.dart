@@ -1,5 +1,4 @@
 import 'package:internship/src/core/base_import.dart';
-import 'package:internship/src/views/gungsatria/payment/payment_controller.dart';
 import 'package:internship/src/views/gungsatria/waiting-room/waitingroom_controller.dart';
 
 import 'waitingroom_mobile_page.dart';
