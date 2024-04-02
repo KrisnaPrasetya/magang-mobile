@@ -1,269 +1,79 @@
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:internship/src/core/base_import.dart';
+import 'package:internship/src/views/krisna/waitingRoom/waiting_controller.dart';
 
 class WaitingRoomOne extends StatelessWidget {
-  const WaitingRoomOne({super.key});
+  final WaitingController controller;
+  final int index;
+  const WaitingRoomOne(
+      {super.key, required this.controller, required this.index});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          children: [
-            Padding(
-              padding: EdgeInsets.only(top: 25).copyWith(left: 23),
-              child: Container(
-                width: 38.68,
-                height: 6,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                  color: Colors.amber,
+    return Container(
+      height: Get.height / 1.9,
+      child: ListView.builder(
+        itemCount: controller.Title.length,
+        itemBuilder: (BuildContext context, index) {
+          return Column(
+            children: [
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    padding: EdgeInsets.only(top: 35).copyWith(left: 20),
+                    child: SvgPicture.asset(
+                        'assets/krisna/icons/${index == 0 ? "Bendera" : index == 1 ? "Lampu" : "Pribadi"}.svg'),
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(top: 30).copyWith(left: 15),
+                    child: Text(
+                      '${controller.Title[index]}',
+                      style: TypographyStyle.heading6Bold.copyWith(
+                          color: ColorStyle().grayscaleRange.shade100),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    padding: EdgeInsets.only(top: 5).copyWith(left: 76),
+                    child: Text(
+                      "Soal • ${index == 0 ? "30 Butir" : index == 1 ? "35 Butir" : "45 Butir"}",
+                      style: TypographyStyle.body2DemiBold.copyWith(
+                          color: ColorStyle().grayscaleRange.shade100),
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(top: 5).copyWith(left: 20),
+                    child: Text(
+                      "Minimal Nilai • ${index == 0 ? "65" : index == 1 ? "85" : "156"}",
+                      style: TypographyStyle.body2DemiBold.copyWith(
+                          color: ColorStyle().grayscaleRange.shade100),
+                    ),
+                  ),
+                ],
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 5)
+                    .copyWith(left: 45)
+                    .copyWith(right: 30),
+                child: Expanded(
+                  child: Column(
+                    children: [
+                      Divider(
+                        color: Colors.blue[600],
+                      )
+                    ],
+                  ),
                 ),
               ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(top: 25).copyWith(left: 5),
-              child: Container(
-                width: 38.68,
-                height: 6,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                  color: HexColor("#5D83F4"),
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(top: 25).copyWith(left: 5),
-              child: Container(
-                width: 38.68,
-                height: 6,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                  color: HexColor("#5D83F4"),
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(top: 25).copyWith(left: 5),
-              child: Container(
-                width: 38.68,
-                height: 6,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                  color: HexColor("#5D83F4"),
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(top: 25).copyWith(left: 5),
-              child: Container(
-                width: 38.68,
-                height: 6,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                  color: HexColor("#5D83F4"),
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(top: 25).copyWith(left: 5),
-              child: Container(
-                width: 38.68,
-                height: 6,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                  color: HexColor("#5D83F4"),
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(top: 25).copyWith(left: 5),
-              child: Container(
-                width: 38.68,
-                height: 6,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                  color: HexColor("#5D83F4"),
-                ),
-              ),
-            ),
-          ],
-        ),
-        Container(
-          padding: EdgeInsets.only(top: 15, left: 22),
-          child: Text(
-            "Materi Seleksi\nKompetensi Dasar (SKD)",
-            textAlign: TextAlign.left,
-            style: TypographyStyle.heading5Bold
-                .copyWith(color: ColorStyle().grayscaleRange.shade100),
-          ),
-        ),
-        Padding(
-          padding: EdgeInsets.only(top: 20, left: 22),
-          child: Container(
-            width: 38.68,
-            height: 6,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(15)),
-              color: ColorStyle().grayscaleRange.shade100,
-            ),
-          ),
-        ),
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              padding: EdgeInsets.only(top: 35).copyWith(left: 20),
-              child: SvgPicture.asset('assets/krisna/icons/Bendera.svg'),
-            ),
-            Container(
-              padding: EdgeInsets.only(top: 30).copyWith(left: 15),
-              child: Text(
-                "Tes Wawasan\nKebangsaan",
-                style: TypographyStyle.heading6Bold
-                    .copyWith(color: ColorStyle().grayscaleRange.shade100),
-              ),
-            ),
-          ],
-        ),
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              padding: EdgeInsets.only(top: 5).copyWith(left: 76),
-              child: Text(
-                "Soal • 30 Butir",
-                style: TypographyStyle.body2DemiBold
-                    .copyWith(color: ColorStyle().grayscaleRange.shade100),
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.only(top: 5).copyWith(left: 20),
-              child: Text(
-                "Minimal Nilai • 65",
-                style: TypographyStyle.body2DemiBold
-                    .copyWith(color: ColorStyle().grayscaleRange.shade100),
-              ),
-            ),
-          ],
-        ),
-        Padding(
-          padding:
-              EdgeInsets.only(top: 5).copyWith(left: 75).copyWith(right: 30),
-          child: Expanded(
-            child: Column(
-              children: [
-                Divider(
-                  color: Colors.blue[600],
-                )
-              ],
-            ),
-          ),
-        ),
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              padding: EdgeInsets.only(top: 25).copyWith(left: 20),
-              child: SvgPicture.asset('assets/krisna/icons/Lampu.svg'),
-            ),
-            Container(
-              padding: EdgeInsets.only(top: 20).copyWith(left: 15),
-              child: Text(
-                "Tes Intelegensi\nUmum",
-                style: TypographyStyle.heading6Bold
-                    .copyWith(color: ColorStyle().grayscaleRange.shade100),
-              ),
-            ),
-          ],
-        ),
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              padding: EdgeInsets.only(top: 5).copyWith(left: 76),
-              child: Text(
-                "Soal • 35 Butir",
-                style: TypographyStyle.body2DemiBold
-                    .copyWith(color: ColorStyle().grayscaleRange.shade100),
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.only(top: 5).copyWith(left: 20),
-              child: Text(
-                "Minimal Nilai • 80",
-                style: TypographyStyle.body2DemiBold
-                    .copyWith(color: ColorStyle().grayscaleRange.shade100),
-              ),
-            ),
-          ],
-        ),
-        Padding(
-          padding:
-              EdgeInsets.only(top: 5).copyWith(left: 75).copyWith(right: 30),
-          child: Expanded(
-            child: Column(
-              children: [
-                Divider(
-                  color: Colors.blue[600],
-                )
-              ],
-            ),
-          ),
-        ),
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              padding: EdgeInsets.only(top: 26).copyWith(left: 20),
-              child: SvgPicture.asset('assets/krisna/icons/Pribadi.svg'),
-            ),
-            Container(
-              padding: EdgeInsets.only(top: 20).copyWith(left: 15),
-              child: Text(
-                "Tes Karakteristik\nPribadi",
-                style: TypographyStyle.heading6Bold
-                    .copyWith(color: ColorStyle().grayscaleRange.shade100),
-              ),
-            ),
-          ],
-        ),
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              padding: EdgeInsets.only(top: 5).copyWith(left: 76),
-              child: Text(
-                "Soal • 45 Butir",
-                style: TypographyStyle.body2DemiBold
-                    .copyWith(color: ColorStyle().grayscaleRange.shade100),
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.only(top: 5).copyWith(left: 15),
-              child: Text(
-                "Minimal Nilai • 156",
-                style: TypographyStyle.body2DemiBold
-                    .copyWith(color: ColorStyle().grayscaleRange.shade100),
-              ),
-            ),
-          ],
-        ),
-        Padding(
-          padding:
-              EdgeInsets.only(top: 10).copyWith(left: 75).copyWith(right: 30),
-          child: Expanded(
-            child: Column(
-              children: [
-                Divider(
-                  color: Colors.blue[600],
-                )
-              ],
-            ),
-          ),
-        )
-      ],
+            ],
+          );
+        },
+      ),
     );
   }
 }

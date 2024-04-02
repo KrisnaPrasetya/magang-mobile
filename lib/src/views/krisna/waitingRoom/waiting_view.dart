@@ -1,17 +1,15 @@
 import 'package:internship/src/core/base_import.dart';
-import 'package:internship/src/views/krisna/payment/payment_controller.dart';
+import 'package:internship/src/views/krisna/waitingRoom/waiting_controller.dart';
 import 'package:internship/src/views/krisna/waitingRoom/waiting_mobile_page.dart';
-
-
 
 class WaitingView extends StatelessWidget {
   const WaitingView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return BaseWidget<PaymentController>(
+    return BaseWidget<WaitingController>(
       backgroundColor: ColorStyle.whiteColor,
-      controller: PaymentController(),
+      controller: WaitingController(),
       appBar: AppBar(
         backgroundColor: ColorStyle.whiteColor,
         systemOverlayStyle: SystemUiOverlayStyle(

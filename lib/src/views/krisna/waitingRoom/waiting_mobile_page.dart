@@ -1,15 +1,17 @@
+import 'package:flutter_svg/svg.dart';
 import 'package:internship/src/core/base_import.dart';
-import 'package:internship/src/views/example/example_controller.dart';
+import 'package:internship/src/views/krisna/waitingRoom/section/listview_coba.dart';
 import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_one.dart';
 import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_three.dart';
 import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_two.dart';
+import 'package:internship/src/views/krisna/waitingRoom/waiting_controller.dart';
 
 class WaitingMobilePage extends StatelessWidget {
   WaitingMobilePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<ExampleController>(
+    return GetBuilder<WaitingController>(
       builder: (controller) => PopScope(
         canPop: controller.canPop,
         child: Scaffold(
@@ -68,14 +70,136 @@ class WaitingMobilePage extends StatelessWidget {
                                   BorderRadius.all(Radius.circular(15)),
                               color: HexColor("#4169E1"),
                             ),
-                            child: ScrollConfiguration(
-                              behavior: CustomDisableGlowBehavior(),
-                              child: SingleChildScrollView(
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [WaitingRoomThree()],
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Padding(
+                                      padding:
+                                          EdgeInsets.only(top: 25, left: 23),
+                                      child: Container(
+                                        width: 38.68,
+                                        height: 6,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(15)),
+                                          color: Colors.amber,
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.only(top: 25)
+                                          .copyWith(left: 5),
+                                      child: Container(
+                                        width: 38.68,
+                                        height: 6,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(15)),
+                                          color: HexColor("#5D83F4"),
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          EdgeInsets.only(top: 25, left: 3),
+                                      child: Container(
+                                        width: 38.68,
+                                        height: 6,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(15)),
+                                          color: HexColor("#5D83F4"),
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.only(top: 25)
+                                          .copyWith(left: 5),
+                                      child: Container(
+                                        width: 38.68,
+                                        height: 6,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(15)),
+                                          color: HexColor("#5D83F4"),
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.only(top: 25)
+                                          .copyWith(left: 5),
+                                      child: Container(
+                                        width: 38.68,
+                                        height: 6,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(15)),
+                                          color: HexColor("#5D83F4"),
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.only(top: 25)
+                                          .copyWith(left: 5),
+                                      child: Container(
+                                        width: 38.68,
+                                        height: 6,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(15)),
+                                          color: HexColor("#5D83F4"),
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.only(top: 25)
+                                          .copyWith(left: 5),
+                                      child: Container(
+                                        width: 38.68,
+                                        height: 6,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(15)),
+                                          color: HexColor("#5D83F4"),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
-                              ),
+                                Container(
+                                  alignment: Alignment.topLeft,
+                                  padding: EdgeInsets.only(top: 15, left: 22),
+                                  child: Text(
+                                    "Materi Seleksi\nKompetensi Dasar (SKD)",
+                                    textAlign: TextAlign.left,
+                                    style: TypographyStyle.heading5Bold
+                                        .copyWith(
+                                            color: ColorStyle()
+                                                .grayscaleRange
+                                                .shade100),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(
+                                      right: 260, top: 15, bottom: 15),
+                                  child: Container(
+                                    alignment: Alignment.topLeft,
+                                    width: 38.68,
+                                    height: 6,
+                                    decoration: BoxDecoration(
+                                      borderRadius:
+                                          BorderRadius.all(Radius.circular(15)),
+                                      color:
+                                          ColorStyle().grayscaleRange.shade100,
+                                    ),
+                                  ),
+                                ),
+                                WaitingRoomTwo(
+                                  controller: controller,
+                                  index: controller.Tekspagedua.length,
+                                ),
+                              ],
                             ),
                           ),
                         ),
