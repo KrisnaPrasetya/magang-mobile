@@ -11,4 +11,5 @@ abstract class AppRoutes {
   // krisna
   static const krisnaPage = '/krisna';
   static const kPaymentPage = '$krisnaPage/payment';
+  static const kWaitingPage = '$krisnaPage/Waiting';
 }
