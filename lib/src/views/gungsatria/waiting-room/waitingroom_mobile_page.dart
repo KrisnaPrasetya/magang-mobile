@@ -134,7 +134,7 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                               top: 12, left: 20),
                                           child: Container(
                                             width: 52,
-                                            height: 8,
+                                            height: 4,
                                             decoration: BoxDecoration(
                                                 color: ColorStyle.whiteColor,
                                                 borderRadius:
@@ -207,14 +207,18 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                                               )
                                                             ],
                                                           ),
+                                                          SizedBox(
+                                                            height: 12,
+                                                          ),
                                                           index == 2
                                                               ? SizedBox()
                                                               : Container(
                                                                   width: 250,
-                                                                  height: 4,
+                                                                  height: 2,
                                                                   decoration: BoxDecoration(
-                                                                      color: ColorStyle
-                                                                          .whiteColor,
+                                                                      color: ColorStyle()
+                                                                              .blueRange[
+                                                                          600],
                                                                       borderRadius:
                                                                           BorderRadius.circular(
                                                                               4)),
@@ -259,12 +263,15 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                               top: 12, left: 20),
                                           child: Container(
                                             width: 52,
-                                            height: 8,
+                                            height: 4,
                                             decoration: BoxDecoration(
                                                 color: ColorStyle.whiteColor,
                                                 borderRadius:
-                                                    BorderRadius.circular(10)),
+                                                    BorderRadius.circular(8)),
                                           ),
+                                        ),
+                                        SizedBox(
+                                          height: 12,
                                         ),
                                         Container(
                                           width: Get.width - 40,
@@ -300,6 +307,9 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                                             CrossAxisAlignment
                                                                 .start,
                                                         children: [
+                                                          SizedBox(
+                                                            height: 8,
+                                                          ),
                                                           Text(
                                                             '${controller.tipsTesSKD[index]}',
                                                             style: TypographyStyle
@@ -307,6 +317,9 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                                                 .copyWith(
                                                                     color: ColorStyle
                                                                         .whiteColor),
+                                                          ),
+                                                          SizedBox(
+                                                            height: 12,
                                                           ),
                                                           index == 5
                                                               ? SizedBox()
@@ -333,6 +346,526 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                         SizedBox(
                                           height: 12,
                                         )
+                                      ],
+                                    ),
+                                  ),
+                                  Container(
+                                    width: Get.width - 40,
+                                    padding:
+                                        EdgeInsets.symmetric(horizontal: 20),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        SizedBox(
+                                          height: 12,
+                                        ),
+                                        Text(
+                                          'Strategi Urutan\nMengerjakan SKD',
+                                          style: TypographyStyle.heading5Bold
+                                              .copyWith(
+                                                  color: ColorStyle.whiteColor),
+                                        ),
+                                        SizedBox(
+                                          height: 12,
+                                        ),
+                                        Container(
+                                          width: 52,
+                                          height: 4,
+                                          decoration: BoxDecoration(
+                                              color: ColorStyle.whiteColor,
+                                              borderRadius:
+                                                  BorderRadius.circular(8)),
+                                        ),
+                                        SizedBox(
+                                          height: 24,
+                                        ),
+                                        Container(
+                                          child: Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Container(
+                                                width: Get.width - 40,
+                                                decoration: BoxDecoration(
+                                                    color: ColorStyle()
+                                                        .blueRange[100],
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            16)),
+                                                child: Column(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    Row(
+                                                      children: [
+                                                        Padding(
+                                                          padding:
+                                                              const EdgeInsets
+                                                                  .only(
+                                                                  left: 12,
+                                                                  top: 12),
+                                                          child: Text(
+                                                            '1. Tes Karakteristik\nPribadi(TKP) • Soal\nNo. 66-110',
+                                                            style: TypographyStyle
+                                                                .heading6Bold
+                                                                .copyWith(
+                                                                    color: ColorStyle()
+                                                                            .blueRange[
+                                                                        900]),
+                                                          ),
+                                                        ),
+                                                        SizedBox(
+                                                          width: 28,
+                                                        ),
+                                                        SvgPicture.asset(
+                                                            'assets/gungsatria/icons/ic_mind_backlight.svg')
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets
+                                                          .symmetric(
+                                                          horizontal: 12),
+                                                      child: Container(
+                                                        alignment:
+                                                            Alignment.center,
+                                                        height: 68,
+                                                        decoration: BoxDecoration(
+                                                            color: ColorStyle()
+                                                                .blueRange[300],
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        10)),
+                                                        child: Text(
+                                                          'Target: menyelesaikan 45 soal\ndalam waktu maksimal 29 menit',
+                                                          style: TypographyStyle
+                                                              .body1DemiBold
+                                                              .copyWith(
+                                                                  color: ColorStyle()
+                                                                          .blueRange[
+                                                                      900]),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets
+                                                          .symmetric(
+                                                          horizontal: 28),
+                                                      child: Container(
+                                                        height: 12,
+                                                        decoration: BoxDecoration(
+                                                            color: HexColor(
+                                                                'FEBE03'),
+                                                            borderRadius: BorderRadius.only(
+                                                                topLeft: Radius
+                                                                    .circular(
+                                                                        6),
+                                                                topRight: Radius
+                                                                    .circular(
+                                                                        6))),
+                                                        alignment: Alignment
+                                                            .bottomCenter,
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 12,
+                                              ),
+                                              Container(
+                                                alignment: Alignment.center,
+                                                width: Get.width - 40,
+                                                child: SvgPicture.asset(
+                                                  'assets/gungsatria/icons/ic_arrow.svg',
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 12,
+                                              ),
+                                              Container(
+                                                color: Colors.white,
+                                                width: Get.width - 40,
+                                                child: Column(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text('BREAK: 10 Detik'),
+                                                    Row(
+                                                      children: [
+                                                        Container(
+                                                          width: 18,
+                                                          height: 18,
+                                                          decoration: BoxDecoration(
+                                                              color:
+                                                                  Colors.amber,
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          6)),
+                                                        ),
+                                                        Text(
+                                                            'Gerak badan (suasana baru)')
+                                                      ],
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        Container(
+                                                          width: 18,
+                                                          height: 18,
+                                                          decoration: BoxDecoration(
+                                                              color:
+                                                                  Colors.amber,
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          6)),
+                                                        ),
+                                                        Text(
+                                                            'Gerak badan (suasana baru)')
+                                                      ],
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        Container(
+                                                          width: 18,
+                                                          height: 18,
+                                                          decoration: BoxDecoration(
+                                                              color:
+                                                                  Colors.amber,
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          6)),
+                                                        ),
+                                                        Text(
+                                                            'Gerak badan (suasana baru)')
+                                                      ],
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 12,
+                                              ),
+                                              Container(
+                                                alignment: Alignment.center,
+                                                width: Get.width - 40,
+                                                child: SvgPicture.asset(
+                                                  'assets/gungsatria/icons/ic_arrow.svg',
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 12,
+                                              ),
+                                              Container(
+                                                width: Get.width - 40,
+                                                decoration: BoxDecoration(
+                                                    color: ColorStyle()
+                                                        .blueRange[100],
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            16)),
+                                                child: Column(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    Row(
+                                                      children: [
+                                                        Padding(
+                                                          padding:
+                                                              const EdgeInsets
+                                                                  .only(
+                                                                  left: 12),
+                                                          child: Text(
+                                                              '1. Tes Karakteristik\nPribadi(TKP) • Soal\nNo. 66-110'),
+                                                        ),
+                                                        SvgPicture.asset(
+                                                            'assets/gungsatria/icons/ic_mind_backlight.svg')
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Container(
+                                                      height: 52,
+                                                      color: Colors.amber,
+                                                      child: Text(
+                                                          'Target: menyelesaikan 45 soal dalam waktu maksimal 29 menit'),
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets
+                                                          .symmetric(
+                                                          horizontal: 28),
+                                                      child: Container(
+                                                        height: 12,
+                                                        decoration: BoxDecoration(
+                                                            color: ColorStyle
+                                                                .blackColor,
+                                                            borderRadius: BorderRadius.only(
+                                                                topLeft: Radius
+                                                                    .circular(
+                                                                        6),
+                                                                topRight: Radius
+                                                                    .circular(
+                                                                        6))),
+                                                        alignment: Alignment
+                                                            .bottomCenter,
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 12,
+                                              ),
+                                              Container(
+                                                alignment: Alignment.center,
+                                                width: Get.width - 40,
+                                                child: SvgPicture.asset(
+                                                  'assets/gungsatria/icons/ic_arrow.svg',
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 12,
+                                              ),
+                                              Container(
+                                                color: Colors.white,
+                                                width: Get.width - 40,
+                                                child: Column(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text('BREAK: 10 Detik'),
+                                                    Row(
+                                                      children: [
+                                                        Container(
+                                                          width: 18,
+                                                          height: 18,
+                                                          decoration: BoxDecoration(
+                                                              color:
+                                                                  Colors.amber,
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          6)),
+                                                        ),
+                                                        Text(
+                                                            'Gerak badan (suasana baru)')
+                                                      ],
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        Container(
+                                                          width: 18,
+                                                          height: 18,
+                                                          decoration: BoxDecoration(
+                                                              color:
+                                                                  Colors.amber,
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          6)),
+                                                        ),
+                                                        Text(
+                                                            'Gerak badan (suasana baru)')
+                                                      ],
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        Container(
+                                                          width: 18,
+                                                          height: 18,
+                                                          decoration: BoxDecoration(
+                                                              color:
+                                                                  Colors.amber,
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          6)),
+                                                        ),
+                                                        Text(
+                                                            'Gerak badan (suasana baru)')
+                                                      ],
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 12,
+                                              ),
+                                              Container(
+                                                alignment: Alignment.center,
+                                                width: Get.width - 40,
+                                                child: SvgPicture.asset(
+                                                  'assets/gungsatria/icons/ic_arrow.svg',
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 12,
+                                              ),
+                                              Container(
+                                                width: Get.width - 40,
+                                                decoration: BoxDecoration(
+                                                    color: ColorStyle()
+                                                        .blueRange[100],
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            16)),
+                                                child: Column(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    Row(
+                                                      children: [
+                                                        Padding(
+                                                          padding:
+                                                              const EdgeInsets
+                                                                  .only(
+                                                                  left: 12),
+                                                          child: Text(
+                                                              '1. Tes Karakteristik\nPribadi(TKP) • Soal\nNo. 66-110'),
+                                                        ),
+                                                        SvgPicture.asset(
+                                                            'assets/gungsatria/icons/ic_mind_backlight.svg')
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Container(
+                                                      height: 52,
+                                                      color: Colors.amber,
+                                                      child: Text(
+                                                          'Target: menyelesaikan 45 soal dalam waktu maksimal 29 menit'),
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets
+                                                          .symmetric(
+                                                          horizontal: 28),
+                                                      child: Container(
+                                                        height: 12,
+                                                        decoration: BoxDecoration(
+                                                            color: ColorStyle
+                                                                .blackColor,
+                                                            borderRadius: BorderRadius.only(
+                                                                topLeft: Radius
+                                                                    .circular(
+                                                                        6),
+                                                                topRight: Radius
+                                                                    .circular(
+                                                                        6))),
+                                                        alignment: Alignment
+                                                            .bottomCenter,
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 12,
+                                              ),
+                                              Container(
+                                                alignment: Alignment.center,
+                                                width: Get.width - 40,
+                                                child: SvgPicture.asset(
+                                                  'assets/gungsatria/icons/ic_arrow.svg',
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 12,
+                                              ),
+                                              Container(
+                                                color: Colors.white,
+                                                width: Get.width - 40,
+                                                child: Column(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text('BREAK: 10 Detik'),
+                                                    Row(
+                                                      children: [
+                                                        Container(
+                                                          width: 18,
+                                                          height: 18,
+                                                          decoration: BoxDecoration(
+                                                              color:
+                                                                  Colors.amber,
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          6)),
+                                                        ),
+                                                        Text(
+                                                            'Gerak badan (suasana baru)')
+                                                      ],
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        Container(
+                                                          width: 18,
+                                                          height: 18,
+                                                          decoration: BoxDecoration(
+                                                              color:
+                                                                  Colors.amber,
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          6)),
+                                                        ),
+                                                        Text(
+                                                            'Gerak badan (suasana baru)')
+                                                      ],
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        Container(
+                                                          width: 18,
+                                                          height: 18,
+                                                          decoration: BoxDecoration(
+                                                              color:
+                                                                  Colors.amber,
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          6)),
+                                                        ),
+                                                        Text(
+                                                            'Gerak badan (suasana baru)')
+                                                      ],
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 12,
+                                              ),
+                                              Container(
+                                                alignment: Alignment.center,
+                                                width: Get.width - 40,
+                                                child: SvgPicture.asset(
+                                                  'assets/gungsatria/icons/ic_arrow.svg',
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 12,
+                                              ),
+                                            ],
+                                          ),
+                                        ),
                                       ],
                                     ),
                                   ),
