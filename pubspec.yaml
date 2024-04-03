@@ -28,9 +28,60 @@ flutter:
 
   assets:
     - assets/
+    - assets/fonts/
     - assets/gungsatria/
     - assets/gungsatria/images/
     - assets/gungsatria/icons/
     - assets/krisna/
     - assets/krisna/images/
     - assets/krisna/icons/
+
+  fonts:
+    - family: VisibyRoundHeavy
+      fonts:
+        - asset: assets/fonts/VisibyRound/VisbyRoundCF-Heavy.ttf
+          style: normal
+        - asset: assets/fonts/VisibyRound/VisbyRoundCF-HeavyOblique.ttf
+          style: italic
+    - family: VisibyRoundExtraBold
+      fonts:
+        - asset: assets/fonts/VisibyRound/VisbyRoundCF-ExtraBold.ttf
+          style: normal
+        - asset: assets/fonts/VisibyRound/VisbyRoundCF-ExtraBoldOblique.ttf
+          style: italic
+    - family: VisibyRoundBold
+      fonts:
+        - asset: assets/fonts/VisibyRound/VisbyRoundCF-Bold.ttf
+          style: normal
+        - asset: assets/fonts/VisibyRound/VisbyRoundCF-BoldOblique.ttf
+          style: italic
+    - family: VisibyRoundDemiBold
+      fonts:
+        - asset: assets/fonts/VisibyRound/VisbyRoundCF-DemiBold.ttf
+          style: normal
+        - asset: assets/fonts/VisibyRound/VisbyRoundCF-DemiBoldOblique.ttf
+          style: italic
+    - family: VisibyRoundMedium
+      fonts:
+        - asset: assets/fonts/VisibyRound/VisbyRoundCF-Medium.ttf
+          style: normal
+        - asset: assets/fonts/VisibyRound/VisbyRoundCF-MediumOblique.ttf
+          style: italic
+    - family: VisibyRoundRegular
+      fonts:
+        - asset: assets/fonts/VisibyRound/VisbyRoundCF-Regular.ttf
+          style: normal
+        - asset: assets/fonts/VisibyRound/VisbyRoundCF-Oblique.ttf
+          style: italic
+    - family: VisibyRoundLight
+      fonts:
+        - asset: assets/fonts/VisibyRound/VisbyRoundCF-Light.ttf
+          style: normal
+        - asset: assets/fonts/VisibyRound/VisbyRoundCF-LightOblique.ttf
+          style: italic
+    - family: VisibyRoundExtraLight
+      fonts:
+        - asset: assets/fonts/VisibyRound/VisbyRoundCF-ExtraLight.ttf
+          style: normal
+        - asset: assets/fonts/VisibyRound/VisbyRoundCF-ExtraLightOblique.ttf
+          style: italic
