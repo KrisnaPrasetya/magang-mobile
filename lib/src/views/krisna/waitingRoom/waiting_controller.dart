@@ -3,7 +3,8 @@ import 'package:internship/src/core/base_import.dart';
 class WaitingController extends BaseController {
   PageController pageController = PageController();
   bool canPop = true;
-  List<String> Title = [
+  
+  List<String> title = [
     'Tes Wawasan\nKebangsaan',
     'Tes Intelegensi\nUmum',
     'Materi Seleksi\nKompetensi Dasar (SKD)'

@@ -13,19 +13,20 @@ class WaitingRoomOne extends StatelessWidget {
     return Column(
       children: [
         Container(
-          alignment: Alignment.topLeft,
-          padding: EdgeInsets.only(top: 15, left: 22),
-          child: Text(
-            "Materi Seleksi\nKompetensi Dasar (SKD)",
-            textAlign: TextAlign.left,
-            style: TypographyStyle.heading5Bold
-                .copyWith(color: ColorStyle().grayscaleRange.shade100),
+          child: Padding(
+            padding: EdgeInsets.only(
+              right: 80,
+            ),
+            child: Text(
+              "Materi Seleksi\nKompetensi Dasar (SKD)",
+              style: TypographyStyle.heading5Bold
+                  .copyWith(color: ColorStyle().grayscaleRange.shade100),
+            ),
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(right: 260, top: 15),
+          padding: const EdgeInsets.only(top: 15, right: 310),
           child: Container(
-            alignment: Alignment.topLeft,
             width: 38.68,
             height: 6,
             decoration: BoxDecoration(
@@ -39,8 +40,9 @@ class WaitingRoomOne extends StatelessWidget {
         ),
         Container(
           height: Get.height / 1.9,
+          width: Get.width,
           child: ListView.builder(
-            itemCount: controller.Title.length,
+            itemCount: controller.title.length,
             itemBuilder: (BuildContext context, index) {
               return Column(
                 children: [
@@ -48,14 +50,14 @@ class WaitingRoomOne extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        padding: EdgeInsets.only(top: 35, left: 20),
+                        padding: EdgeInsets.only(top: 25, left: 20),
                         child: SvgPicture.asset(
                             'assets/krisna/icons/${index == 0 ? "Bendera" : index == 1 ? "Lampu" : "Pribadi"}.svg'),
                       ),
                       Container(
-                        padding: EdgeInsets.only(top: 30, left: 15),
+                        padding: EdgeInsets.only(top: 20, left: 15),
                         child: Text(
-                          '${controller.Title[index]}',
+                          '${controller.title[index]}',
                           style: TypographyStyle.heading6Bold.copyWith(
                               color: ColorStyle().grayscaleRange.shade100),
                         ),
@@ -85,14 +87,12 @@ class WaitingRoomOne extends StatelessWidget {
                   ),
                   Padding(
                     padding: EdgeInsets.only(top: 5, left: 45, right: 30),
-                    child: Expanded(
-                      child: Column(
-                        children: [
-                          Divider(
-                            color: Colors.blue[600],
-                          )
-                        ],
-                      ),
+                    child: Column(
+                      children: [
+                        Divider(
+                          color: Colors.blue[600],
+                        )
+                      ],
                     ),
                   ),
                 ],

@@ -12,7 +12,7 @@ class WaitingRoomTwo extends StatelessWidget {
       children: [
         Container(
           alignment: Alignment.topLeft,
-          padding: EdgeInsets.only(top: 15, left: 22),
+          padding: EdgeInsets.only(top: 15, right: 120),
           child: Text(
             "Persiapan Menjelang\nTes SKD",
             textAlign: TextAlign.left,
@@ -21,7 +21,7 @@ class WaitingRoomTwo extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(right: 260, top: 15),
+          padding: const EdgeInsets.only(right: 310, top: 15),
           child: Container(
             alignment: Alignment.topLeft,
             width: 38.68,
@@ -37,6 +37,7 @@ class WaitingRoomTwo extends StatelessWidget {
         ),
         Container(
           height: Get.height / 1.9,
+          width: Get.width,
           child: ListView.builder(
               itemCount: controller.Tekspagedua.length,
               itemBuilder: (BuildContext context, index) {

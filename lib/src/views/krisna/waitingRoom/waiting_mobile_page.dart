@@ -1,5 +1,5 @@
-import 'package:flutter_svg/svg.dart';
 import 'package:internship/src/core/base_import.dart';
+import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_four.dart';
 import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_one.dart';
 import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_three.dart';
 import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_two.dart';
@@ -29,7 +29,8 @@ class WaitingMobilePage extends StatelessWidget {
                   Container(
                     width: Get.width,
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
                           color: HexColor("#4169E1"),
@@ -63,7 +64,7 @@ class WaitingMobilePage extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 25),
                           child: Container(
-                            height: Get.height / 1.3,
+                            // height: Get.height / 1,
                             decoration: BoxDecoration(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(15)),
@@ -166,9 +167,25 @@ class WaitingMobilePage extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                                WaitingRoomTwo(
-                                  controller: controller,
-                                  index: controller.Tekspagedua.length,
+                                Container(
+                                  width: Get.width,
+                                  child: SingleChildScrollView(
+                                    scrollDirection: Axis.horizontal,
+                                    child: Row(
+                                      children: [
+                                        WaitingRoomOne(
+                                          controller: controller,
+                                          index: controller.title.length,
+                                        ),
+                                        WaitingRoomTwo(
+                                          controller: controller,
+                                          index: controller.Tekspagedua.length,
+                                        ),
+                                        WaitingRoomThree(),
+                                        WaitingRoomFour()
+                                      ],
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),
