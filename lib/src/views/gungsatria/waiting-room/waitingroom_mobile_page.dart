@@ -64,6 +64,9 @@ class WaitingRoomMobilePage extends StatelessWidget {
                           ),
                         ],
                       )),
+                  SizedBox(
+                    height: 20,
+                  ),
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 20),
                     child: Container(
@@ -130,7 +133,7 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                           padding: EdgeInsets.only(
                                               top: 12, left: 20),
                                           child: Container(
-                                            width: 36,
+                                            width: 52,
                                             height: 8,
                                             decoration: BoxDecoration(
                                                 color: ColorStyle.whiteColor,
@@ -170,6 +173,9 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                                             CrossAxisAlignment
                                                                 .start,
                                                         children: [
+                                                          SizedBox(
+                                                            height: 24,
+                                                          ),
                                                           Text(
                                                             '${controller.titleMateriSKD[index]}',
                                                             style: TypographyStyle
@@ -252,7 +258,7 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                           padding: EdgeInsets.only(
                                               top: 12, left: 20),
                                           child: Container(
-                                            width: 36,
+                                            width: 52,
                                             height: 8,
                                             decoration: BoxDecoration(
                                                 color: ColorStyle.whiteColor,
@@ -261,45 +267,34 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                           ),
                                         ),
                                         Container(
-                                          width: Get.width,
-                                          child: ListView.separated(
-                                            separatorBuilder:
-                                                (context, index) => SizedBox(
-                                              height: 20,
-                                            ),
-                                            itemCount: 6,
-                                            shrinkWrap: true,
-                                            physics:
-                                                NeverScrollableScrollPhysics(),
-                                            itemBuilder: (context, index) {
-                                              return Container(
-                                                width: Get.width,
-                                                child: Row(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.start,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.start,
+                                          width: Get.width - 40,
+                                          child: Padding(
+                                            padding:
+                                                const EdgeInsets.only(left: 16),
+                                            child: ListView.separated(
+                                              separatorBuilder:
+                                                  (context, index) => SizedBox(
+                                                height: 20,
+                                              ),
+                                              itemCount: 6,
+                                              shrinkWrap: true,
+                                              physics:
+                                                  NeverScrollableScrollPhysics(),
+                                              itemBuilder: (context, index) {
+                                                return Row(
                                                   children: [
-                                                    Padding(
-                                                      padding: EdgeInsets.only(
-                                                          top: 32, left: 20),
-                                                      child: Container(
-                                                        width: 12,
-                                                        height: 12,
-                                                        decoration: BoxDecoration(
-                                                            color: ColorStyle()
-                                                                .blueRange[600],
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        3)),
-                                                      ),
+                                                    Container(
+                                                      width: 12,
+                                                      height: 12,
+                                                      decoration: BoxDecoration(
+                                                          color: ColorStyle()
+                                                              .blueRange[600],
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(3)),
                                                     ),
-                                                    Padding(
-                                                      padding: EdgeInsets.only(
-                                                        top: 12,
-                                                        left: 20,
-                                                      ),
+                                                    SizedBox(width: 8),
+                                                    Expanded(
                                                       child: Column(
                                                         crossAxisAlignment:
                                                             CrossAxisAlignment
@@ -316,7 +311,7 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                                           index == 5
                                                               ? SizedBox()
                                                               : Container(
-                                                                  width: 250,
+                                                                  width: 300,
                                                                   height: 2,
                                                                   decoration: BoxDecoration(
                                                                       color: ColorStyle()
@@ -330,9 +325,9 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                                       ),
                                                     ),
                                                   ],
-                                                ),
-                                              );
-                                            },
+                                                );
+                                              },
+                                            ),
                                           ),
                                         ),
                                         SizedBox(
