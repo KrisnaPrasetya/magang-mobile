@@ -1,6 +1,4 @@
 import 'package:internship/src/core/base_import.dart';
-import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_one.dart';
-import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_two.dart';
 
 class WaitingController extends BaseController {
   PageController pageController = PageController();
@@ -13,7 +11,7 @@ class WaitingController extends BaseController {
 
   List<String> Tekspagedua = [
     'Luangkan waktu 1-2 hari\nuntuk refreshing',
-    'Jaga kondisi badan (minum vitamin,\ntidur yang cukup, dll)',
+    'Jaga kondisi badan (minum \nvitamin,tidur yang cukup, dll)',
     'Siapkan kondisi mental (doa, minta\nrestu, bangun keyakinan diri, dll)',
     'Persiapkan Perlengkapan Yang\ndipersyaratkan (pakaian Sesuai\nPersyaratan, Sepatu Yang Nyaman,\nDll)',
     'Survai lokasi sehari sebelum tes\n(pastikan waktu perjalanan,\ncara mencapai tempat, parkir, dll)',

@@ -16,7 +16,7 @@ class WaitingRoomThree extends StatelessWidget {
             Row(
               children: [
                 Padding(
-                  padding: EdgeInsets.only(top: 25).copyWith(left: 23),
+                  padding: EdgeInsets.only(top: 25, left: 23),
                   child: Container(
                     width: 38.68,
                     height: 6,
@@ -27,7 +27,7 @@ class WaitingRoomThree extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 25).copyWith(left: 5),
+                  padding: EdgeInsets.only(top: 25, left: 5),
                   child: Container(
                     width: 38.68,
                     height: 6,
@@ -38,7 +38,7 @@ class WaitingRoomThree extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 25).copyWith(left: 5),
+                  padding: EdgeInsets.only(top: 25, left: 5),
                   child: Container(
                     width: 38.68,
                     height: 6,
@@ -49,7 +49,7 @@ class WaitingRoomThree extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 25).copyWith(left: 5),
+                  padding: EdgeInsets.only(top: 25, left: 5),
                   child: Container(
                     width: 38.68,
                     height: 6,
@@ -60,7 +60,7 @@ class WaitingRoomThree extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 25).copyWith(left: 5),
+                  padding: EdgeInsets.only(top: 25, left: 5),
                   child: Container(
                     width: 38.68,
                     height: 6,
@@ -71,7 +71,7 @@ class WaitingRoomThree extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 25).copyWith(left: 5),
+                  padding: EdgeInsets.only(top: 25, left: 5),
                   child: Container(
                     width: 38.68,
                     height: 6,
@@ -82,7 +82,7 @@ class WaitingRoomThree extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 25).copyWith(left: 5),
+                  padding: EdgeInsets.only(top: 25, left: 5),
                   child: Container(
                     width: 38.68,
                     height: 6,
@@ -283,11 +283,6 @@ class WaitingRoomThree extends StatelessWidget {
                 'assets/krisna/icons/Arrow.svg',
               ),
             ),
-
-
-
-
-            
           ],
         ),
       ),

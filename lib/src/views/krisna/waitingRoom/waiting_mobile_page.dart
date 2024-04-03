@@ -1,6 +1,5 @@
 import 'package:flutter_svg/svg.dart';
 import 'package:internship/src/core/base_import.dart';
-import 'package:internship/src/views/krisna/waitingRoom/section/listview_coba.dart';
 import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_one.dart';
 import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_three.dart';
 import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_two.dart';
@@ -64,7 +63,7 @@ class WaitingMobilePage extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 25),
                           child: Container(
-                            height: Get.height / 1.4,
+                            height: Get.height / 1.3,
                             decoration: BoxDecoration(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(15)),
@@ -88,8 +87,8 @@ class WaitingMobilePage extends StatelessWidget {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsets.only(top: 25)
-                                          .copyWith(left: 5),
+                                      padding:
+                                          EdgeInsets.only(top: 25, left: 3),
                                       child: Container(
                                         width: 38.68,
                                         height: 6,
@@ -114,8 +113,8 @@ class WaitingMobilePage extends StatelessWidget {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsets.only(top: 25)
-                                          .copyWith(left: 5),
+                                      padding:
+                                          EdgeInsets.only(top: 25, left: 3),
                                       child: Container(
                                         width: 38.68,
                                         height: 6,
@@ -127,8 +126,8 @@ class WaitingMobilePage extends StatelessWidget {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsets.only(top: 25)
-                                          .copyWith(left: 5),
+                                      padding:
+                                          EdgeInsets.only(top: 25, left: 3),
                                       child: Container(
                                         width: 38.68,
                                         height: 6,
@@ -140,8 +139,8 @@ class WaitingMobilePage extends StatelessWidget {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsets.only(top: 25)
-                                          .copyWith(left: 5),
+                                      padding:
+                                          EdgeInsets.only(top: 25, left: 3),
                                       child: Container(
                                         width: 38.68,
                                         height: 6,
@@ -153,8 +152,8 @@ class WaitingMobilePage extends StatelessWidget {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsets.only(top: 25)
-                                          .copyWith(left: 5),
+                                      padding:
+                                          EdgeInsets.only(top: 25, left: 3),
                                       child: Container(
                                         width: 38.68,
                                         height: 6,
@@ -166,34 +165,6 @@ class WaitingMobilePage extends StatelessWidget {
                                       ),
                                     ),
                                   ],
-                                ),
-                                Container(
-                                  alignment: Alignment.topLeft,
-                                  padding: EdgeInsets.only(top: 15, left: 22),
-                                  child: Text(
-                                    "Materi Seleksi\nKompetensi Dasar (SKD)",
-                                    textAlign: TextAlign.left,
-                                    style: TypographyStyle.heading5Bold
-                                        .copyWith(
-                                            color: ColorStyle()
-                                                .grayscaleRange
-                                                .shade100),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(
-                                      right: 260, top: 15, bottom: 15),
-                                  child: Container(
-                                    alignment: Alignment.topLeft,
-                                    width: 38.68,
-                                    height: 6,
-                                    decoration: BoxDecoration(
-                                      borderRadius:
-                                          BorderRadius.all(Radius.circular(15)),
-                                      color:
-                                          ColorStyle().grayscaleRange.shade100,
-                                    ),
-                                  ),
                                 ),
                                 WaitingRoomTwo(
                                   controller: controller,
