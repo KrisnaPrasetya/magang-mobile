@@ -491,64 +491,113 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                                 height: 12,
                                               ),
                                               Container(
-                                                color: Colors.white,
+                                                decoration: BoxDecoration(
+                                                    color: ColorStyle()
+                                                        .grayscaleRange[300],
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            16)),
                                                 width: Get.width - 40,
                                                 child: Column(
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.start,
                                                   children: [
-                                                    Text('BREAK: 10 Detik'),
+                                                    SizedBox(
+                                                      height: 12,
+                                                    ),
+                                                    Padding(
+                                                      padding:
+                                                          const EdgeInsets.only(
+                                                              left: 12),
+                                                      child: Text(
+                                                        'BREAK: 10 Detik',
+                                                        style: TypographyStyle
+                                                            .heading6Bold
+                                                            .copyWith(
+                                                                color: Colors
+                                                                    .black),
+                                                      ),
+                                                    ),
                                                     Row(
                                                       children: [
-                                                        Container(
-                                                          width: 18,
-                                                          height: 18,
-                                                          decoration: BoxDecoration(
-                                                              color:
-                                                                  Colors.amber,
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          6)),
+                                                        Padding(
+                                                          padding:
+                                                              const EdgeInsets
+                                                                  .symmetric(
+                                                                  horizontal:
+                                                                      12),
+                                                          child: Container(
+                                                            width: 18,
+                                                            height: 18,
+                                                            decoration: BoxDecoration(
+                                                                color: Colors
+                                                                    .amber,
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .circular(
+                                                                            6)),
+                                                          ),
                                                         ),
                                                         Text(
                                                             'Gerak badan (suasana baru)')
                                                       ],
                                                     ),
+                                                    SizedBox(height: 12),
+                                                    Padding(
+                                                      padding: const EdgeInsets
+                                                          .symmetric(
+                                                          horizontal: 12,
+                                                          vertical: 12),
+                                                      child: Row(
+                                                        crossAxisAlignment:
+                                                            CrossAxisAlignment
+                                                                .start,
+                                                        children: [
+                                                          Container(
+                                                            width: 18,
+                                                            height: 18,
+                                                            decoration: BoxDecoration(
+                                                                color: Colors
+                                                                    .amber,
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .circular(
+                                                                            6)),
+                                                          ),
+                                                          SizedBox(
+                                                            width: 12,
+                                                          ),
+                                                          Text(
+                                                              'Tarik Nafas Panjang (asupan\noksigen ke otak)')
+                                                        ],
+                                                      ),
+                                                    ),
+                                                    SizedBox(height: 12),
                                                     Row(
                                                       children: [
-                                                        Container(
-                                                          width: 18,
-                                                          height: 18,
-                                                          decoration: BoxDecoration(
-                                                              color:
-                                                                  Colors.amber,
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          6)),
+                                                        Padding(
+                                                          padding:
+                                                              const EdgeInsets
+                                                                  .symmetric(
+                                                                  horizontal:
+                                                                      12),
+                                                          child: Container(
+                                                            width: 18,
+                                                            height: 18,
+                                                            decoration: BoxDecoration(
+                                                                color: Colors
+                                                                    .amber,
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .circular(
+                                                                            6)),
+                                                          ),
                                                         ),
                                                         Text(
-                                                            'Gerak badan (suasana baru)')
+                                                            'Perhatikan sisa waktu di pojok\nkanan atas')
                                                       ],
                                                     ),
-                                                    Row(
-                                                      children: [
-                                                        Container(
-                                                          width: 18,
-                                                          height: 18,
-                                                          decoration: BoxDecoration(
-                                                              color:
-                                                                  Colors.amber,
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          6)),
-                                                        ),
-                                                        Text(
-                                                            'Gerak badan (suasana baru)')
-                                                      ],
-                                                    ),
+                                                    SizedBox(height: 12),
                                                   ],
                                                 ),
                                               ),
