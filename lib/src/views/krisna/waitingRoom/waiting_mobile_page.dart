@@ -1,6 +1,9 @@
 import 'package:internship/src/core/base_import.dart';
+import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_seven.dart';
+import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_six.dart';
 import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_four.dart';
 import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_one.dart';
+import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_five.dart';
 import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_three.dart';
 import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_two.dart';
 import 'package:internship/src/views/krisna/waitingRoom/waiting_controller.dart';
@@ -29,8 +32,7 @@ class WaitingMobilePage extends StatelessWidget {
                   Container(
                     width: Get.width,
                     child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
                           color: HexColor("#4169E1"),
@@ -71,6 +73,7 @@ class WaitingMobilePage extends StatelessWidget {
                               color: HexColor("#4169E1"),
                             ),
                             child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Row(
                                   children: [
@@ -172,6 +175,8 @@ class WaitingMobilePage extends StatelessWidget {
                                   child: SingleChildScrollView(
                                     scrollDirection: Axis.horizontal,
                                     child: Row(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         WaitingRoomOne(
                                           controller: controller,
@@ -182,7 +187,10 @@ class WaitingMobilePage extends StatelessWidget {
                                           index: controller.Tekspagedua.length,
                                         ),
                                         WaitingRoomThree(),
-                                        WaitingRoomFour()
+                                        WaitingRoomFour(),
+                                        WaitingRoomFive(),
+                                        WaitingRoomSix(),
+                                        WaitingRoomSeven()
                                       ],
                                     ),
                                   ),

@@ -1,7 +1,7 @@
 import 'package:internship/src/core/base_import.dart';
 
-class WaitingRoomFour extends StatelessWidget {
-  const WaitingRoomFour({super.key});
+class WaitingRoomFive extends StatelessWidget {
+  const WaitingRoomFive({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class WaitingRoomFour extends StatelessWidget {
                 color: ColorStyle().orangeRange[800],
               ),
               child: Text(
-                "#Langkah 1",
+                "#Langkah 2",
                 textAlign: TextAlign.center,
                 style:
                     TypographyStyle.body1DemiBold.copyWith(color: Colors.white),
@@ -33,7 +33,7 @@ class WaitingRoomFour extends StatelessWidget {
             padding: const EdgeInsets.only(left: 24),
             child: Container(
               child: Text(
-                "Kerjakan TKP\nDulu",
+                "Kerjakan TIU",
                 style: TypographyStyle.heading5Bold
                     .copyWith(color: ColorStyle().grayscaleRange.shade100),
               ),
@@ -75,7 +75,7 @@ class WaitingRoomFour extends StatelessWidget {
                             .copyWith(color: ColorStyle().blueRange[900]),
                       ),
                       Text(
-                        "66-110",
+                        "31-65",
                         textAlign: TextAlign.center,
                         style: TypographyStyle.body1Bold
                             .copyWith(color: ColorStyle().blueRange[900]),
@@ -101,7 +101,7 @@ class WaitingRoomFour extends StatelessWidget {
                             .copyWith(color: ColorStyle().blueRange[900]),
                       ),
                       Text(
-                        "45 Soal",
+                        "25 Soal",
                         textAlign: TextAlign.center,
                         style: TypographyStyle.body1Bold
                             .copyWith(color: ColorStyle().blueRange[900]),
@@ -127,7 +127,7 @@ class WaitingRoomFour extends StatelessWidget {
                             .copyWith(color: ColorStyle().blueRange[900]),
                       ),
                       Text(
-                        "25 Menit",
+                        "35 Menit",
                         textAlign: TextAlign.center,
                         style: TypographyStyle.body1Bold
                             .copyWith(color: ColorStyle().blueRange[900]),
@@ -169,7 +169,7 @@ class WaitingRoomFour extends StatelessWidget {
                         ),
                         Expanded(
                           child: Text(
-                            "Baca sub kategori soal (terletak di pojok kiri atas).Untuk itu penting mempelajari dengan baik tujuan, pengertian, konsep, karakteristik & sikap yang diharapkan pada masing-masing sub kategori TKP (Pelayanan Publik, Jejaring Kerja, Sosial Budaya, TIK, Profesionalisme & Anti Radikalisme)",
+                            "Tarik nafas & gerak badan terlebih dahulu. Jangan lupa melihat waktu tersisa yang terletak di pojok kanan atas.",
                             textAlign: TextAlign.left,
                             style: TypographyStyle.body1bMedium
                                 .copyWith(color: Colors.white),
@@ -198,7 +198,7 @@ class WaitingRoomFour extends StatelessWidget {
                         ),
                         Expanded(
                           child: Text(
-                            "Baca cepat soal, temukan inti pertanyaan (biasanya di bagian akhir soal).",
+                            "Dari 35 soal, targetkan menjawab minimal 25 soal dengan benar. Untuk itu carilah soal-soal yang mudah terlebih dahulu.",
                             textAlign: TextAlign.left,
                             style: TypographyStyle.body1bMedium
                                 .copyWith(color: Colors.white),
@@ -227,7 +227,7 @@ class WaitingRoomFour extends StatelessWidget {
                         ),
                         Expanded(
                           child: Text(
-                            "Baca cermat inti pertanyaan dan pilihan jawabannya (Contoh: Kecuali)",
+                            "Jangan menghabiskan waktu untuk mengerjakan soal yang sulit. Jika soal yang kalian kerjakan sudah lebih dari 2 menit, tinggalkan dulu. Nanti saja dikerjakannya. Setelah selesai mengerjakan seluruh soal TWK.",
                             textAlign: TextAlign.left,
                             style: TypographyStyle.body1bMedium
                                 .copyWith(color: Colors.white),
@@ -256,101 +256,7 @@ class WaitingRoomFour extends StatelessWidget {
                         ),
                         Expanded(
                           child: Text(
-                            "Dari 5 pilihan jawaban, pilih 2 jawaban yang ideal/relevan/terbaik sesuai dengan sub kategori.",
-                            textAlign: TextAlign.left,
-                            style: TypographyStyle.body1bMedium
-                                .copyWith(color: Colors.white),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(vertical: 16),
-                    child: Container(
-                      height: 1,
-                      width: 260,
-                      color: ColorStyle().blueRange[600],
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "5.  ",
-                          style: TypographyStyle.body1bMedium
-                              .copyWith(color: Colors.white),
-                        ),
-                        Expanded(
-                          child: Text(
-                            "Pilih salah satu secara cepat. Jangan terlalu lama memilih jawaban terbaik diantara 2 pilihan yang tersisa",
-                            textAlign: TextAlign.left,
-                            style: TypographyStyle.body1bMedium
-                                .copyWith(color: Colors.white),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  //spasi sizebox
-                  SizedBox(
-                    height: 24,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 220),
-                    child: Text(
-                      "Tips & Trik",
-                      style: TypographyStyle.body1Bold
-                          .copyWith(color: Colors.white),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 12,
-                  ),
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "1.  ",
-                          style: TypographyStyle.body1bMedium
-                              .copyWith(color: Colors.white),
-                        ),
-                        Expanded(
-                          child: Text(
-                            "Tempatkan diri kita sebagai seorang yang AHLI atau PROFESIONAL dibidang/materi yang ditanyakan. Misalkan soal terkait IT, maka posisikan diri kita sebagai ahli IT. Pilih jawaban yang mampu menyelesaikan masalah IT tersebut. Contoh lain, jika soal terkait pelayanan publik, posisikan diri kalian sebagai orang yang profesional dan mengutamakan memberikan pelayanan yang terbaik.",
-                            textAlign: TextAlign.left,
-                            style: TypographyStyle.body1bMedium
-                                .copyWith(color: Colors.white),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(vertical: 16),
-                    child: Container(
-                      height: 1,
-                      width: 260,
-                      color: ColorStyle().blueRange[600],
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "2.  ",
-                          style: TypographyStyle.body1bMedium
-                              .copyWith(color: Colors.white),
-                        ),
-                        Expanded(
-                          child: Text(
-                            "Kerjakan semua soal dengan cara mengerjakan diatas dalam waktu maksimal 25 menit. Jika semua pilihan jawaban kita bernilai minimal 4, maka nilai total TKP sudah memenuhi Pasing Grade (4x45=180). Seburuk-buruknya, dari 45 soal terdapat 10 soal yang nilainya 3, maka nilai total TKP tetap memenuhi Passing Grade (35X4)+(10x3)=140+30=170.",
+                            "Pada tahap ini pastikan bahwa kalian sudah mencapai target minimal 20 soal benar dari semua soal yang kalian kerjakan.",
                             textAlign: TextAlign.left,
                             style: TypographyStyle.body1bMedium
                                 .copyWith(color: Colors.white),

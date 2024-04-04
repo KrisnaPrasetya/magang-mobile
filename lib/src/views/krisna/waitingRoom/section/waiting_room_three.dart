@@ -53,7 +53,7 @@ class WaitingRoomThree extends StatelessWidget {
                               children: [
                                 Container(
                                   child: Text(
-                                    "1. Tes Karakteristik\nPribadi (TKP) • Soal\nNo. 66-110",
+                                    "1. Te s Karakteristik\nPribadi (TKP) • Soal\nNo. 66-110",
                                     style: TypographyStyle.heading6Bold
                                         .copyWith(
                                             color: ColorStyle().blueRange[900]),
