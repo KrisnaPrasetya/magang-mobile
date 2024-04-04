@@ -402,29 +402,30 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                                         CrossAxisAlignment
                                                             .start,
                                                     children: [
+                                                      SizedBox(
+                                                        height: 12,
+                                                      ),
                                                       Row(
                                                         children: [
-                                                          Padding(
-                                                            padding:
-                                                                const EdgeInsets
-                                                                    .only(
-                                                                    left: 12,
-                                                                    top: 12),
-                                                            child: Text(
-                                                              '1. Tes Karakteristik\nPribadi(TKP) • Soal\nNo. 66-110',
-                                                              style: TypographyStyle
-                                                                  .heading6Bold
-                                                                  .copyWith(
-                                                                      color: ColorStyle()
-                                                                              .blueRange[
-                                                                          900]),
-                                                            ),
+                                                          SizedBox(
+                                                            width: 12,
+                                                          ),
+                                                          Text(
+                                                            '1. Tes Karakteristik\nPribadi(TKP) • Soal\nNo. 66-110',
+                                                            style: TypographyStyle
+                                                                .heading6Bold
+                                                                .copyWith(
+                                                                    color: ColorStyle()
+                                                                            .blueRange[
+                                                                        900]),
                                                           ),
                                                           SizedBox(
                                                             width: 28,
                                                           ),
-                                                          SvgPicture.asset(
-                                                              'assets/gungsatria/icons/ic_mind_backlight.svg')
+                                                          Expanded(
+                                                            child: SvgPicture.asset(
+                                                                'assets/gungsatria/icons/ic_mind_backlight.svg'),
+                                                          )
                                                         ],
                                                       ),
                                                       SizedBox(
@@ -501,7 +502,7 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                                 Container(
                                                   decoration: BoxDecoration(
                                                       color: ColorStyle()
-                                                          .grayscaleRange[300],
+                                                          .grayscaleRange[200],
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               16)),
@@ -523,8 +524,9 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                                           style: TypographyStyle
                                                               .heading6Bold
                                                               .copyWith(
-                                                                  color: Colors
-                                                                      .black),
+                                                                  color: ColorStyle()
+                                                                          .grayscaleRange[
+                                                                      700]),
                                                         ),
                                                       ),
                                                       SizedBox(
@@ -668,29 +670,29 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                                         CrossAxisAlignment
                                                             .start,
                                                     children: [
+                                                      SizedBox(
+                                                        height: 8,
+                                                      ),
                                                       Row(
                                                         children: [
-                                                          Padding(
-                                                            padding:
-                                                                const EdgeInsets
-                                                                    .only(
-                                                                    left: 12,
-                                                                    top: 12),
-                                                            child: Text(
-                                                              '2. Tes Intelegensi\nUmum (TIU) • Soal\nNo. 31-65',
-                                                              style: TypographyStyle
-                                                                  .heading6Bold
-                                                                  .copyWith(
-                                                                      color: ColorStyle()
-                                                                              .blueRange[
-                                                                          900]),
-                                                            ),
+                                                          SizedBox(
+                                                            width: 12,
+                                                          ),
+                                                          Text(
+                                                            '2. Tes Intelegensi\nUmum (TIU) • Soal\nNo. 31-65',
+                                                            style: TypographyStyle
+                                                                .heading6Bold
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white),
                                                           ),
                                                           SizedBox(
                                                             width: 28,
                                                           ),
-                                                          SvgPicture.asset(
-                                                              'assets/gungsatria/icons/ic_lamp_backlight.svg')
+                                                          Expanded(
+                                                            child: SvgPicture.asset(
+                                                                'assets/gungsatria/icons/ic_lamp_backlight.svg'),
+                                                          )
                                                         ],
                                                       ),
                                                       SizedBox(
@@ -767,7 +769,7 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                                 Container(
                                                   decoration: BoxDecoration(
                                                       color: ColorStyle()
-                                                          .grayscaleRange[300],
+                                                          .grayscaleRange[200],
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               16)),
@@ -789,8 +791,9 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                                           style: TypographyStyle
                                                               .heading6Bold
                                                               .copyWith(
-                                                                  color: Colors
-                                                                      .black),
+                                                                  color: ColorStyle()
+                                                                          .grayscaleRange[
+                                                                      700]),
                                                         ),
                                                       ),
                                                       SizedBox(
@@ -932,29 +935,29 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                                         CrossAxisAlignment
                                                             .start,
                                                     children: [
+                                                      SizedBox(
+                                                        height: 12,
+                                                      ),
                                                       Row(
                                                         children: [
-                                                          Padding(
-                                                            padding:
-                                                                const EdgeInsets
-                                                                    .only(
-                                                                    left: 12,
-                                                                    top: 12),
-                                                            child: Text(
-                                                              '3. Tes Wawasan\nKebangsaan (TWK)\n• Soal No. 1 - 30',
-                                                              style: TypographyStyle
-                                                                  .heading6Bold
-                                                                  .copyWith(
-                                                                      color: ColorStyle()
-                                                                              .blueRange[
-                                                                          900]),
-                                                            ),
+                                                          SizedBox(
+                                                            width: 12,
+                                                          ),
+                                                          Text(
+                                                            '3. Tes Wawasan\nKebangsaan (TWK)\n• Soal No. 1 - 30',
+                                                            style: TypographyStyle
+                                                                .heading6Bold
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white),
                                                           ),
                                                           SizedBox(
                                                             width: 20,
                                                           ),
-                                                          SvgPicture.asset(
-                                                              'assets/gungsatria/icons/ic_flag_backlight.svg')
+                                                          Expanded(
+                                                            child: SvgPicture.asset(
+                                                                'assets/gungsatria/icons/ic_flag_backlight.svg'),
+                                                          )
                                                         ],
                                                       ),
                                                       SizedBox(
@@ -1030,7 +1033,7 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                                 Container(
                                                   decoration: BoxDecoration(
                                                       color: ColorStyle()
-                                                          .grayscaleRange[300],
+                                                          .grayscaleRange[200],
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               16)),
@@ -1052,8 +1055,9 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                                           style: TypographyStyle
                                                               .heading6Bold
                                                               .copyWith(
-                                                                  color: Colors
-                                                                      .black),
+                                                                  color: ColorStyle()
+                                                                          .grayscaleRange[
+                                                                      700]),
                                                         ),
                                                       ),
                                                       SizedBox(
@@ -1183,10 +1187,1676 @@ class WaitingRoomMobilePage extends StatelessWidget {
                                                 SizedBox(
                                                   height: 12,
                                                 ),
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                      color: ColorStyle()
+                                                          .grayscaleRange[200],
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              16)),
+                                                  width: Get.width - 40,
+                                                  child: Column(
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment
+                                                            .start,
+                                                    children: [
+                                                      SizedBox(
+                                                        height: 12,
+                                                      ),
+                                                      Padding(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .only(left: 16),
+                                                        child: Text(
+                                                          'SISA WAKTU 2 MENIT',
+                                                          style: TypographyStyle
+                                                              .heading6Bold
+                                                              .copyWith(
+                                                                  color: ColorStyle()
+                                                                          .grayscaleRange[
+                                                                      700]),
+                                                        ),
+                                                      ),
+                                                      SizedBox(
+                                                        height: 12,
+                                                      ),
+                                                      Padding(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .symmetric(
+                                                                horizontal: 12),
+                                                        child: Container(
+                                                          height: 100,
+                                                          decoration: BoxDecoration(
+                                                              color: ColorStyle()
+                                                                      .grayscaleRange[
+                                                                  300],
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          10)),
+                                                          child: Column(
+                                                            children: [
+                                                              SizedBox(
+                                                                height: 12,
+                                                              ),
+                                                              Text(
+                                                                'Target:\nmenyelesaikan soal-soal yang\nbelum terjawab/ragu',
+                                                                style: TypographyStyle
+                                                                    .body1DemiBold
+                                                                    .copyWith(
+                                                                        color: ColorStyle()
+                                                                            .grayscaleRange[700]),
+                                                              ),
+                                                            ],
+                                                          ),
+                                                          alignment:
+                                                              Alignment.center,
+                                                        ),
+                                                      ),
+                                                      SizedBox(
+                                                        height: 20,
+                                                      )
+                                                    ],
+                                                  ),
+                                                ),
+                                                Container(
+                                                  alignment: Alignment.center,
+                                                  width: Get.width - 40,
+                                                  child: SvgPicture.asset(
+                                                    'assets/gungsatria/icons/ic_arrow.svg',
+                                                  ),
+                                                ),
+                                                SizedBox(
+                                                  height: 12,
+                                                ),
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                      color: ColorStyle()
+                                                          .grayscaleRange[200],
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              16)),
+                                                  width: Get.width - 40,
+                                                  child: Column(
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment
+                                                            .start,
+                                                    children: [
+                                                      SizedBox(
+                                                        height: 12,
+                                                      ),
+                                                      Row(
+                                                        children: [
+                                                          SizedBox(
+                                                            width: 12,
+                                                          ),
+                                                          SvgPicture.asset(
+                                                              'assets/gungsatria/icons/ic_circle_info.svg'),
+                                                          SizedBox(
+                                                            width: 8,
+                                                          ),
+                                                          Text(
+                                                            'Catatan:',
+                                                            style: TypographyStyle
+                                                                .heading6Bold
+                                                                .copyWith(
+                                                                    color: ColorStyle()
+                                                                            .grayscaleRange[
+                                                                        700]),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                      SizedBox(
+                                                        height: 8,
+                                                      ),
+                                                      Row(
+                                                        children: [
+                                                          SizedBox(
+                                                            width: 16,
+                                                          ),
+                                                          Text(
+                                                            'Setelah mengerjakan TKP, anda\ndapat mengerjakan TWK terlebih\ndahulu sebelum mengerjakan TIU\n(sesuai dengan kebiasaan/\nkenyamanan anda)',
+                                                            style: TypographyStyle
+                                                                .body1DemiBold
+                                                                .copyWith(
+                                                                    color: ColorStyle()
+                                                                            .grayscaleRange[
+                                                                        700]),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                      SizedBox(
+                                                        height: 20,
+                                                      )
+                                                    ],
+                                                  ),
+                                                ),
                                               ],
                                             ),
                                           ),
                                         ),
+                                      ],
+                                    ),
+                                  ),
+                                  // Halaman Kerjakan TKP Dulu
+                                  Container(
+                                    width: Get.width - 40,
+                                    padding:
+                                        EdgeInsets.symmetric(horizontal: 20),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        SizedBox(
+                                          height: 12,
+                                        ),
+                                        Container(
+                                          width: 100,
+                                          height: 28,
+                                          decoration: BoxDecoration(
+                                              color:
+                                                  ColorStyle().orangeRange[800],
+                                              borderRadius:
+                                                  BorderRadius.circular(8)),
+                                          child: Center(
+                                            child: Text(
+                                              '#Langkah 1',
+                                              style: TypographyStyle
+                                                  .body2DemiBold
+                                                  .copyWith(
+                                                      color: Colors.white),
+                                            ),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 12,
+                                        ),
+                                        Text(
+                                          'Kerjakan TKP\nDulu',
+                                          style: TypographyStyle.heading5Bold
+                                              .copyWith(color: Colors.white),
+                                        ),
+                                        SizedBox(
+                                          height: 12,
+                                        ),
+                                        Container(
+                                          width: 52,
+                                          height: 4,
+                                          decoration: BoxDecoration(
+                                              color: ColorStyle.whiteColor,
+                                              borderRadius:
+                                                  BorderRadius.circular(8)),
+                                        ),
+                                        Container(
+                                          height: 400,
+                                          child: SingleChildScrollView(
+                                            child: Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                SizedBox(
+                                                  height: 12,
+                                                ),
+                                                //Kerjakan TKP Dulu
+                                                Container(
+                                                  height: 65,
+                                                  decoration: BoxDecoration(
+                                                      color: ColorStyle()
+                                                          .blueRange[100],
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              12)),
+                                                  child: Row(
+                                                    children: [
+                                                      SizedBox(
+                                                        width: 32,
+                                                      ),
+                                                      Column(
+                                                        children: [
+                                                          SizedBox(
+                                                            height: 4,
+                                                          ),
+                                                          Column(
+                                                            children: [
+                                                              Text(
+                                                                'Nomor\nSoal:',
+                                                                style: TypographyStyle
+                                                                    .body3DemiBold
+                                                                    .copyWith(
+                                                                        color: ColorStyle()
+                                                                            .blueRange[900]),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .center,
+                                                              ),
+                                                              Text(
+                                                                '66-110',
+                                                                style: TypographyStyle
+                                                                    .body1Bold
+                                                                    .copyWith(
+                                                                        color: ColorStyle()
+                                                                            .blueRange[900]),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .center,
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ],
+                                                      ),
+                                                      SizedBox(
+                                                        width: 20,
+                                                      ),
+                                                      Container(
+                                                        width: 2,
+                                                        height: 40,
+                                                        color: ColorStyle()
+                                                            .blueRange[200],
+                                                      ),
+                                                      SizedBox(
+                                                        width: 20,
+                                                      ),
+                                                      Column(
+                                                        children: [
+                                                          SizedBox(
+                                                            height: 4,
+                                                          ),
+                                                          Column(
+                                                            children: [
+                                                              Text(
+                                                                'Target Soal\nDikerjakan',
+                                                                style: TypographyStyle
+                                                                    .body3DemiBold
+                                                                    .copyWith(
+                                                                        color: ColorStyle()
+                                                                            .blueRange[900]),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .center,
+                                                              ),
+                                                              Text(
+                                                                '45 Soal',
+                                                                style: TypographyStyle
+                                                                    .body1Bold
+                                                                    .copyWith(
+                                                                        color: ColorStyle()
+                                                                            .blueRange[900]),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .center,
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ],
+                                                      ),
+                                                      SizedBox(
+                                                        width: 20,
+                                                      ),
+                                                      Container(
+                                                        width: 2,
+                                                        height: 40,
+                                                        color: ColorStyle()
+                                                            .blueRange[200],
+                                                      ),
+                                                      SizedBox(
+                                                        width: 20,
+                                                      ),
+                                                      Column(
+                                                        children: [
+                                                          SizedBox(
+                                                            height: 4,
+                                                          ),
+                                                          Column(
+                                                            children: [
+                                                              Text(
+                                                                'Waktu\nMengerjakan',
+                                                                style: TypographyStyle
+                                                                    .body3DemiBold
+                                                                    .copyWith(
+                                                                        color: ColorStyle()
+                                                                            .blueRange[900]),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .center,
+                                                              ),
+                                                              Text(
+                                                                '25 Menit',
+                                                                style: TypographyStyle
+                                                                    .body1Bold
+                                                                    .copyWith(
+                                                                        color: ColorStyle()
+                                                                            .blueRange[900]),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .center,
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                                SizedBox(
+                                                  height: 20,
+                                                ),
+                                                Column(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text(
+                                                      'Cara Mengerjakan',
+                                                      style: TypographyStyle
+                                                          .body1Bold
+                                                          .copyWith(
+                                                              color:
+                                                                  Colors.white),
+                                                    ),
+                                                    SizedBox(
+                                                      height: 16,
+                                                    ),
+                                                    Row(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text('1.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                        SizedBox(
+                                                          width: 4,
+                                                        ),
+                                                        Text(
+                                                          'Baca sub kategori soal (terletak di\npojok kiri atas). Untuk itu penting\nmempelajari dengan baik tujuan,\npengertian, konsep, karakteristik &\nsikap yang diharapkan pada\nmasing-masing sub kategori TKP\n(Pelayanan Publik, Jejaring Kerja,\nSosial Budaya, TIK,Profesionalisme &\nAnti Radikalisme)',
+                                                          style: TypographyStyle
+                                                              .body1Medium
+                                                              .copyWith(
+                                                                  color: Colors
+                                                                      .white),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        SizedBox(
+                                                          width: 16,
+                                                        ),
+                                                        Container(
+                                                          width: 300,
+                                                          height: 2,
+                                                          decoration: BoxDecoration(
+                                                              color: ColorStyle()
+                                                                      .blueRange[
+                                                                  600],
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          4)),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text('2.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                        SizedBox(
+                                                          width: 4,
+                                                        ),
+                                                        Text(
+                                                            'Baca cepat soal, temukan inti\npertanyaan (biasanya di bagian\nakhir soal).',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        SizedBox(
+                                                          width: 16,
+                                                        ),
+                                                        Container(
+                                                          width: 300,
+                                                          height: 2,
+                                                          decoration: BoxDecoration(
+                                                              color: ColorStyle()
+                                                                      .blueRange[
+                                                                  600],
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          4)),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text('3.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                        SizedBox(
+                                                          width: 4,
+                                                        ),
+                                                        Text(
+                                                            'Baca cermat inti pertanyaan dan\npilihan jawabannya (Contoh: Kecuali)',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        SizedBox(
+                                                          width: 16,
+                                                        ),
+                                                        Container(
+                                                          width: 300,
+                                                          height: 2,
+                                                          decoration: BoxDecoration(
+                                                              color: ColorStyle()
+                                                                      .blueRange[
+                                                                  600],
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          4)),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text('4.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                        SizedBox(
+                                                          width: 4,
+                                                        ),
+                                                        Text(
+                                                            'Dari 5 pilihan jawaban, pilih 2\njawaban yang ideal/relevan/terbaik\nsesuai dengan sub kategori',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        SizedBox(
+                                                          width: 16,
+                                                        ),
+                                                        Container(
+                                                          width: 300,
+                                                          height: 2,
+                                                          decoration: BoxDecoration(
+                                                              color: ColorStyle()
+                                                                      .blueRange[
+                                                                  600],
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          4)),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text('5.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                        Text(
+                                                            'Pilih salah satu secara cepat. Jangan\nterlalu lama memilih jawaban\nterbaik diantara 2 pilihan yang\ntersisa',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                  ],
+                                                ),
+                                                SizedBox(
+                                                  height: 40,
+                                                ),
+                                                Column(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text(
+                                                      'Tips & Trik',
+                                                      style: TypographyStyle
+                                                          .body1Bold
+                                                          .copyWith(
+                                                              color:
+                                                                  Colors.white),
+                                                    ),
+                                                    SizedBox(
+                                                      height: 16,
+                                                    ),
+                                                    Row(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text('1.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                        SizedBox(
+                                                          width: 4,
+                                                        ),
+                                                        Text(
+                                                            'Tempatkan diri kita sebagai seorang\nyang AHLI atau PROFESIONAL\ndibidang/materi yang ditanyakan.\nMisalkan soal terkait IT, maka\nposisikan diri kita sebagai ahli IT. Pilih\njawaban yang mampu\n menyelesaikan masalah IT tersebut.\nContoh lain, jika soal terkait\npelayanan publik, posisikan diri\nkalian sebagai orang yang\nprofesional dan mengutamakan\nmemberikan pelayanan yang\nterbaik.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        SizedBox(
+                                                          width: 16,
+                                                        ),
+                                                        Container(
+                                                          width: 300,
+                                                          height: 2,
+                                                          decoration: BoxDecoration(
+                                                              color: ColorStyle()
+                                                                      .blueRange[
+                                                                  600],
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          4)),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text('2.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                        Text(
+                                                            'Kerjakan semua soal dengan cara\nmengerjakan diatas dalam waktu\nmaksimal 25 menit. Jika semua\npilihan jawaban kita bernilai minimal\n4, maka nilai total TKP sudah\nmemenuhi Pasing Grade (4x45=180).\nSeburuk-buruknya, dari 45 soal\nterdapat 10 soal yang nilainya 3,\nmaka nilai total TKP tetap\nmemenuhi Passing Grade\n(35X4)+(10x3)=140+30=170.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 40,
+                                                    )
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                  // Kerjakan TIU
+                                  Container(
+                                    width: Get.width - 40,
+                                    padding:
+                                        EdgeInsets.symmetric(horizontal: 20),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        SizedBox(
+                                          height: 12,
+                                        ),
+                                        Container(
+                                          width: 100,
+                                          height: 28,
+                                          decoration: BoxDecoration(
+                                              color:
+                                                  ColorStyle().orangeRange[800],
+                                              borderRadius:
+                                                  BorderRadius.circular(8)),
+                                          child: Center(
+                                            child: Text(
+                                              '#Langkah 2',
+                                              style: TypographyStyle
+                                                  .body2DemiBold
+                                                  .copyWith(
+                                                      color: Colors.white),
+                                            ),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 12,
+                                        ),
+                                        Text(
+                                          'Kerjakan TIU',
+                                          style: TypographyStyle.heading5Bold
+                                              .copyWith(color: Colors.white),
+                                        ),
+                                        SizedBox(
+                                          height: 12,
+                                        ),
+                                        Container(
+                                          width: 52,
+                                          height: 4,
+                                          decoration: BoxDecoration(
+                                              color: ColorStyle.whiteColor,
+                                              borderRadius:
+                                                  BorderRadius.circular(8)),
+                                        ),
+                                        Container(
+                                          height: 400,
+                                          child: SingleChildScrollView(
+                                            child: Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                SizedBox(
+                                                  height: 12,
+                                                ),
+                                                //Kerjakan TKP Dulu
+                                                Container(
+                                                  height: 65,
+                                                  decoration: BoxDecoration(
+                                                      color: ColorStyle()
+                                                          .blueRange[100],
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              12)),
+                                                  child: Row(
+                                                    children: [
+                                                      SizedBox(
+                                                        width: 32,
+                                                      ),
+                                                      Column(
+                                                        children: [
+                                                          SizedBox(
+                                                            height: 4,
+                                                          ),
+                                                          Column(
+                                                            children: [
+                                                              Text(
+                                                                'Nomor\nSoal:',
+                                                                style: TypographyStyle
+                                                                    .body3DemiBold
+                                                                    .copyWith(
+                                                                        color: ColorStyle()
+                                                                            .blueRange[900]),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .center,
+                                                              ),
+                                                              Text(
+                                                                '31-65',
+                                                                style: TypographyStyle
+                                                                    .body1Bold
+                                                                    .copyWith(
+                                                                        color: ColorStyle()
+                                                                            .blueRange[900]),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .center,
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ],
+                                                      ),
+                                                      SizedBox(
+                                                        width: 20,
+                                                      ),
+                                                      Container(
+                                                        width: 2,
+                                                        height: 40,
+                                                        color: ColorStyle()
+                                                            .blueRange[200],
+                                                      ),
+                                                      SizedBox(
+                                                        width: 20,
+                                                      ),
+                                                      Column(
+                                                        children: [
+                                                          SizedBox(
+                                                            height: 4,
+                                                          ),
+                                                          Column(
+                                                            children: [
+                                                              Text(
+                                                                'Target Soal\nDikerjakan',
+                                                                style: TypographyStyle
+                                                                    .body3DemiBold
+                                                                    .copyWith(
+                                                                        color: ColorStyle()
+                                                                            .blueRange[900]),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .center,
+                                                              ),
+                                                              Text(
+                                                                '25 Soal',
+                                                                style: TypographyStyle
+                                                                    .body1Bold
+                                                                    .copyWith(
+                                                                        color: ColorStyle()
+                                                                            .blueRange[900]),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .center,
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ],
+                                                      ),
+                                                      SizedBox(
+                                                        width: 20,
+                                                      ),
+                                                      Container(
+                                                        width: 2,
+                                                        height: 40,
+                                                        color: ColorStyle()
+                                                            .blueRange[200],
+                                                      ),
+                                                      SizedBox(
+                                                        width: 20,
+                                                      ),
+                                                      Column(
+                                                        children: [
+                                                          SizedBox(
+                                                            height: 4,
+                                                          ),
+                                                          Column(
+                                                            children: [
+                                                              Text(
+                                                                'Waktu\nMengerjakan',
+                                                                style: TypographyStyle
+                                                                    .body3DemiBold
+                                                                    .copyWith(
+                                                                        color: ColorStyle()
+                                                                            .blueRange[900]),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .center,
+                                                              ),
+                                                              Text(
+                                                                '35 Menit',
+                                                                style: TypographyStyle
+                                                                    .body1Bold
+                                                                    .copyWith(
+                                                                        color: ColorStyle()
+                                                                            .blueRange[900]),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .center,
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                                SizedBox(
+                                                  height: 20,
+                                                ),
+                                                Column(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text(
+                                                      'Cara Mengerjakan',
+                                                      style: TypographyStyle
+                                                          .body1Bold
+                                                          .copyWith(
+                                                              color:
+                                                                  Colors.white),
+                                                    ),
+                                                    SizedBox(
+                                                      height: 16,
+                                                    ),
+                                                    Row(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text('1.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                        SizedBox(
+                                                          width: 4,
+                                                        ),
+                                                        Text(
+                                                          'Tarik nafas & gerak badan terlebih\ndahulu. Jangan lupa melihat waktu\ntersisa yang terletak di pojok kanan\natas.',
+                                                          style: TypographyStyle
+                                                              .body1Medium
+                                                              .copyWith(
+                                                                  color: Colors
+                                                                      .white),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        SizedBox(
+                                                          width: 16,
+                                                        ),
+                                                        Container(
+                                                          width: 300,
+                                                          height: 2,
+                                                          decoration: BoxDecoration(
+                                                              color: ColorStyle()
+                                                                      .blueRange[
+                                                                  600],
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          4)),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text('2.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                        SizedBox(
+                                                          width: 4,
+                                                        ),
+                                                        Text(
+                                                            'Dari 35 soal, targetkan menjawab\nminimal 25 soal dengan benar.\nUntuk itu carilah soal-soal yang\nmudah terlebih dahulu.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        SizedBox(
+                                                          width: 16,
+                                                        ),
+                                                        Container(
+                                                          width: 300,
+                                                          height: 2,
+                                                          decoration: BoxDecoration(
+                                                              color: ColorStyle()
+                                                                      .blueRange[
+                                                                  600],
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          4)),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text('3.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                        SizedBox(
+                                                          width: 4,
+                                                        ),
+                                                        Text(
+                                                            'Jangan menghabiskan waktu untuk\nmengerjakan soal yang sulit. Jika\nsoal yang kalian kerjakan sudah\nlebih dari 2 menit, tinggalkan dulu.\nNanti saja dikerjakannya. Setelah\nselesai mengerjakan seluruh soal\nTWK.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        SizedBox(
+                                                          width: 16,
+                                                        ),
+                                                        Container(
+                                                          width: 300,
+                                                          height: 2,
+                                                          decoration: BoxDecoration(
+                                                              color: ColorStyle()
+                                                                      .blueRange[
+                                                                  600],
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          4)),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text('4.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                        SizedBox(
+                                                          width: 4,
+                                                        ),
+                                                        Text(
+                                                            'Pada tahap ini pastikan bahwa\nkalian sudah mencapai target\nminimal 20 soal benar dari semua\nsoal yang kalian kerjakan.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                  ],
+                                                ),
+                                                SizedBox(
+                                                  height: 40,
+                                                ),
+                                                Column(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text(
+                                                      'Tips & Trik',
+                                                      style: TypographyStyle
+                                                          .body1Bold
+                                                          .copyWith(
+                                                              color:
+                                                                  Colors.white),
+                                                    ),
+                                                    SizedBox(
+                                                      height: 16,
+                                                    ),
+                                                    Row(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text('1.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                        SizedBox(
+                                                          width: 4,
+                                                        ),
+                                                        Text(
+                                                            'Lebih baik menggunakan waktu\nyang ada (35 menit) untuk\nmengerjakan 25 soal yang mudah\ndaripada memaksakan\nmengerjakan semua soal dalam\nwaktu 35 menit.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        SizedBox(
+                                                          width: 16,
+                                                        ),
+                                                        Container(
+                                                          width: 300,
+                                                          height: 2,
+                                                          decoration: BoxDecoration(
+                                                              color: ColorStyle()
+                                                                      .blueRange[
+                                                                  600],
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          4)),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text('2.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                        SizedBox(
+                                                          width: 4,
+                                                        ),
+                                                        Text(
+                                                            'Dari 25 soal yang dikerjakan dengan\ntarget 20 soal benar maka nilai TIU\nsudah mencapai 100 (20x5)',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        SizedBox(
+                                                          width: 16,
+                                                        ),
+                                                        Container(
+                                                          width: 300,
+                                                          height: 2,
+                                                          decoration: BoxDecoration(
+                                                              color: ColorStyle()
+                                                                      .blueRange[
+                                                                  600],
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          4)),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text('3.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                        SizedBox(
+                                                          width: 4,
+                                                        ),
+                                                        Expanded(
+                                                          child: Text(
+                                                              'Sisa 10 soal dapat dikerjakan dengan\nmenggunakan sisa waktu putaran\npertama (setelah semua kategori\nselesai dikerjakan).',
+                                                              style: TypographyStyle
+                                                                  .body1Medium
+                                                                  .copyWith(
+                                                                      color: Colors
+                                                                          .white)),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 12,
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                  Container(
+                                    width: Get.width - 40,
+                                    padding:
+                                        EdgeInsets.symmetric(horizontal: 20),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        SizedBox(
+                                          height: 12,
+                                        ),
+                                        Container(
+                                          width: 100,
+                                          height: 28,
+                                          decoration: BoxDecoration(
+                                              color:
+                                                  ColorStyle().orangeRange[800],
+                                              borderRadius:
+                                                  BorderRadius.circular(8)),
+                                          child: Center(
+                                            child: Text(
+                                              '#Langkah 1',
+                                              style: TypographyStyle
+                                                  .body2DemiBold
+                                                  .copyWith(
+                                                      color: Colors.white),
+                                            ),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 12,
+                                        ),
+                                        Text(
+                                          'Kerjakan TKP\nDulu',
+                                          style: TypographyStyle.heading5Bold
+                                              .copyWith(color: Colors.white),
+                                        ),
+                                        SizedBox(
+                                          height: 12,
+                                        ),
+                                        Container(
+                                          width: 52,
+                                          height: 4,
+                                          decoration: BoxDecoration(
+                                              color: ColorStyle.whiteColor,
+                                              borderRadius:
+                                                  BorderRadius.circular(8)),
+                                        ),
+                                        Container(
+                                          height: 400,
+                                          child: SingleChildScrollView(
+                                            child: Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                SizedBox(
+                                                  height: 12,
+                                                ),
+                                                //Kerjakan TKP Dulu
+                                                Container(
+                                                  height: 65,
+                                                  decoration: BoxDecoration(
+                                                      color: ColorStyle()
+                                                          .blueRange[100],
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              12)),
+                                                  child: Row(
+                                                    children: [
+                                                      SizedBox(
+                                                        width: 32,
+                                                      ),
+                                                      Column(
+                                                        children: [
+                                                          SizedBox(
+                                                            height: 4,
+                                                          ),
+                                                          Column(
+                                                            children: [
+                                                              Text(
+                                                                'Nomor\nSoal:',
+                                                                style: TypographyStyle
+                                                                    .body3DemiBold
+                                                                    .copyWith(
+                                                                        color: ColorStyle()
+                                                                            .blueRange[900]),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .center,
+                                                              ),
+                                                              Text(
+                                                                '66-110',
+                                                                style: TypographyStyle
+                                                                    .body1Bold
+                                                                    .copyWith(
+                                                                        color: ColorStyle()
+                                                                            .blueRange[900]),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .center,
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ],
+                                                      ),
+                                                      SizedBox(
+                                                        width: 20,
+                                                      ),
+                                                      Container(
+                                                        width: 2,
+                                                        height: 40,
+                                                        color: ColorStyle()
+                                                            .blueRange[200],
+                                                      ),
+                                                      SizedBox(
+                                                        width: 20,
+                                                      ),
+                                                      Column(
+                                                        children: [
+                                                          SizedBox(
+                                                            height: 4,
+                                                          ),
+                                                          Column(
+                                                            children: [
+                                                              Text(
+                                                                'Target Soal\nDikerjakan',
+                                                                style: TypographyStyle
+                                                                    .body3DemiBold
+                                                                    .copyWith(
+                                                                        color: ColorStyle()
+                                                                            .blueRange[900]),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .center,
+                                                              ),
+                                                              Text(
+                                                                '45 Soal',
+                                                                style: TypographyStyle
+                                                                    .body1Bold
+                                                                    .copyWith(
+                                                                        color: ColorStyle()
+                                                                            .blueRange[900]),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .center,
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ],
+                                                      ),
+                                                      SizedBox(
+                                                        width: 20,
+                                                      ),
+                                                      Container(
+                                                        width: 2,
+                                                        height: 40,
+                                                        color: ColorStyle()
+                                                            .blueRange[200],
+                                                      ),
+                                                      SizedBox(
+                                                        width: 20,
+                                                      ),
+                                                      Column(
+                                                        children: [
+                                                          SizedBox(
+                                                            height: 4,
+                                                          ),
+                                                          Column(
+                                                            children: [
+                                                              Text(
+                                                                'Waktu\nMengerjakan',
+                                                                style: TypographyStyle
+                                                                    .body3DemiBold
+                                                                    .copyWith(
+                                                                        color: ColorStyle()
+                                                                            .blueRange[900]),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .center,
+                                                              ),
+                                                              Text(
+                                                                '45 Soal',
+                                                                style: TypographyStyle
+                                                                    .body1Bold
+                                                                    .copyWith(
+                                                                        color: ColorStyle()
+                                                                            .blueRange[900]),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .center,
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                                SizedBox(
+                                                  height: 20,
+                                                ),
+                                                Column(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text(
+                                                      'Cara Mengerjakan',
+                                                      style: TypographyStyle
+                                                          .body1Bold
+                                                          .copyWith(
+                                                              color:
+                                                                  Colors.white),
+                                                    ),
+                                                    SizedBox(
+                                                      height: 16,
+                                                    ),
+                                                    Row(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text('1.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                        SizedBox(
+                                                          width: 4,
+                                                        ),
+                                                        Text(
+                                                          'Baca sub kategori soal (terletak di\npojok kiri atas). Untuk itu penting\nmempelajari dengan baik tujuan,\npengertian, konsep, karakteristik &\nsikap yang diharapkan pada\nmasing-masing sub kategori TKP\n(Pelayanan Publik, Jejaring Kerja,\nSosial Budaya, TIK,Profesionalisme &\nAnti Radikalisme)',
+                                                          style: TypographyStyle
+                                                              .body1Medium
+                                                              .copyWith(
+                                                                  color: Colors
+                                                                      .white),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        SizedBox(
+                                                          width: 16,
+                                                        ),
+                                                        Container(
+                                                          width: 300,
+                                                          height: 2,
+                                                          decoration: BoxDecoration(
+                                                              color: ColorStyle()
+                                                                      .blueRange[
+                                                                  600],
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          4)),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text('2.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                        SizedBox(
+                                                          width: 4,
+                                                        ),
+                                                        Text(
+                                                            'Baca cepat soal, temukan inti\npertanyaan (biasanya di bagian\nakhir soal).',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        SizedBox(
+                                                          width: 16,
+                                                        ),
+                                                        Container(
+                                                          width: 300,
+                                                          height: 2,
+                                                          decoration: BoxDecoration(
+                                                              color: ColorStyle()
+                                                                      .blueRange[
+                                                                  600],
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          4)),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text('3.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                        SizedBox(
+                                                          width: 4,
+                                                        ),
+                                                        Text(
+                                                            'Baca cermat inti pertanyaan dan\npilihan jawabannya (Contoh: Kecuali)',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        SizedBox(
+                                                          width: 16,
+                                                        ),
+                                                        Container(
+                                                          width: 300,
+                                                          height: 2,
+                                                          decoration: BoxDecoration(
+                                                              color: ColorStyle()
+                                                                      .blueRange[
+                                                                  600],
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          4)),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text('4.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                        SizedBox(
+                                                          width: 4,
+                                                        ),
+                                                        Text(
+                                                            'Dari 5 pilihan jawaban, pilih 2\njawaban yang ideal/relevan/terbaik\nsesuai dengan sub kategori',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        SizedBox(
+                                                          width: 16,
+                                                        ),
+                                                        Container(
+                                                          width: 300,
+                                                          height: 2,
+                                                          decoration: BoxDecoration(
+                                                              color: ColorStyle()
+                                                                      .blueRange[
+                                                                  600],
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          4)),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                    Row(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text('5.',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                        Text(
+                                                            'Pilih salah satu secara cepat. Jangan\nterlalu lama memilih jawaban\nterbaik diantara 2 pilihan yang\ntersisa',
+                                                            style: TypographyStyle
+                                                                .body1Medium
+                                                                .copyWith(
+                                                                    color: Colors
+                                                                        .white)),
+                                                      ],
+                                                    ),
+                                                    SizedBox(
+                                                      height: 8,
+                                                    ),
+                                                  ],
+                                                ),
+                                                SizedBox(
+                                                  height: 40,
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        )
                                       ],
                                     ),
                                   ),
