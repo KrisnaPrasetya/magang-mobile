@@ -24,6 +24,12 @@ class ExampleController extends BaseController {
   }
 
   goToPayment() {
-    Get.toNamed(AppRoutes.paymentPage);
+    Get.toNamed(AppRoutes.kPaymentPage);
   }
+  goToWaiting() {
+    Get.toNamed(AppRoutes.kWaitingPage);
+  }
+  
+
+
 }
