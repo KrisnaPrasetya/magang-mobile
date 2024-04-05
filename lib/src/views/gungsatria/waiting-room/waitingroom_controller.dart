@@ -16,6 +16,13 @@ class WaitingRoomController extends BaseController {
     'Survai lokasi sehari sebelum tes\n(pastikan waktu perjalanan, cara\nmencapai tempat, parkir, dll)',
     'Hadir di tempat sesuai waktu yang\ndipersyaratkan (60-90 menit\nsebelum seleksi dimulai)'
   ];
+  List<String> cekJawaban = [
+    'Sisa waktu 2-5 menit, digunakan\nuntuk mengerjakan soal-soal TIU\ndan TWK yang belum terjawab\n(ditandai dengan bulatan warna\nMERAH) atau soal soal TKP yang\nmasih ragu jawabannya.',
+    'Ingat…. Jangan ada soal yang tidak\nterjawab!!!',
+    'Habiskan waktu yang tersisa. Jangan\npanik jika ada yang sudah selesai.',
+    'Untuk soal yang belum terjawab dan\nkalian TIDAK TAHU jawabannya,\njawab secara acak saja namun\nKONSISTEN. Contohnya,\nmenjawab secara konsiten dengan memilih\nopsi jawaban “B” atau “C” terhadap\nsoal yang kalian sama sekali tidak\nmengetahui jawabannya.',
+    'Tidak ada pengurangan nilai kalau\njawaban kita salah. Jadi…..sekali lagi,\nJangan ada soal yang tidak\nterjawab!!!!'
+  ];
 
   @override
   onInit() {
