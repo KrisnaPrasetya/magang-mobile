@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:internship/src/core/base_import.dart';
 import 'package:internship/src/views/gungsatria/payment/payment_controller.dart';
 import 'package:internship/src/widgets/components/custom_button.dart';
@@ -65,7 +67,7 @@ class PaymentMobilePage extends StatelessWidget {
                         horizontalPadding: 20,
                         width: Get.width,
                         onPressed: () {},
-                        child: Text('Aku Sudah bayar',
+                        child: Text('Lakukan Pembayaran',
                             style: TypographyStyle.body1Bold.copyWith(color: ColorStyle().grayscaleRange[500]))),
                   ],
                 ),

@@ -23,5 +23,7 @@ class ExampleController extends BaseController {
     Get.back();
   }
 
-  goToPayment() {}
+  goToPayment() {
+    Get.toNamed(AppRoutes.paymentPage);
+  }
 }
