@@ -51,8 +51,11 @@ class WaitingRoomSeven extends StatelessWidget {
               ),
             ),
           ),
+          SizedBox(
+            height: 20,
+          ),
           Container(
-            height: 340,
+            height: 444,
             child: SingleChildScrollView(
               child: Column(
                 // crossAxisAlignment: CrossAxisAlignment.start,
@@ -127,7 +130,7 @@ class WaitingRoomSeven extends StatelessWidget {
                         ),
                         Expanded(
                           child: Text(
-                            "Habiskan waktu yang tersisa. Jangan panik jika ada yang sudah selesai. ",
+                            "Habiskan waktu yang tersisa. Jangan panik jika ada yang sudah selesai.",
                             textAlign: TextAlign.left,
                             style: TypographyStyle.body1bMedium
                                 .copyWith(color: Colors.white),
@@ -137,7 +140,7 @@ class WaitingRoomSeven extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.symmetric(vertical: 16),
+                    padding: EdgeInsets.symmetric(vertical: 14),
                     child: Container(
                       height: 1,
                       width: 260,

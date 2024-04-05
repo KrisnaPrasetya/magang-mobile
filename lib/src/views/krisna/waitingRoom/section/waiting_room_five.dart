@@ -152,7 +152,7 @@ class WaitingRoomFive extends StatelessWidget {
             height: 12,
           ),
           Container(
-            height: 240,
+            height: 300,
             child: SingleChildScrollView(
               child: Column(
                 // crossAxisAlignment: CrossAxisAlignment.start,
