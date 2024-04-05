@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:internship/src/views/example/example_view.dart';
+import 'package:internship/src/views/gungsatria/bmi/bmi_view.dart';
 
 import 'package:internship/src/views/gungsatria/payment/payment_view.dart'
     as gPaymentView;
@@ -32,6 +33,10 @@ abstract class AppPages {
     GetPage(
       name: AppRoutes.gWaitingRoom,
       page: () => const WaitingRoomView(),
+    ),
+    GetPage(
+      name: AppRoutes.gbmiPage,
+      page: () => const BMIView(),
     ),
 
     // krisna

@@ -1,9 +1,9 @@
 import 'package:internship/src/core/base_import.dart';
-import 'package:internship/src/views/krisna/payment/payment_controller.dart';
-import 'package:internship/src/views/krisna/payment/payment_mobile_page.dart';
+import 'package:internship/src/views/gungsatria/bmi/bmi_controller.dart';
+import 'package:internship/src/views/gungsatria/bmi/bmi_mobile_page.dart';
 
-class PaymentView extends StatelessWidget {
-  const PaymentView({Key? key}) : super(key: key);
+class BMIView extends StatelessWidget {
+  const BMIView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class PaymentView extends StatelessWidget {
         centerTitle: true,
       ),
       extendBody: true,
-      mobile: (controller) => PaymentMobilePage(),
+      mobile: (controller) => BMIMobilePage(),
     );
   }
 }
