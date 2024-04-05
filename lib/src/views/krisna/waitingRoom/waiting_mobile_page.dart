@@ -1,11 +1,4 @@
 import 'package:internship/src/core/base_import.dart';
-import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_seven.dart';
-import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_six.dart';
-import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_four.dart';
-import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_one.dart';
-import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_five.dart';
-import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_three.dart';
-import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_two.dart';
 import 'package:internship/src/views/krisna/waitingRoom/waiting_controller.dart';
 
 class WaitingMobilePage extends StatelessWidget {
@@ -171,28 +164,16 @@ class WaitingMobilePage extends StatelessWidget {
                                   ],
                                 ),
                                 Container(
-                                  width: Get.width,
-                                  child: SingleChildScrollView(
-                                    scrollDirection: Axis.horizontal,
-                                    child: Row(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        WaitingRoomOne(
-                                          controller: controller,
-                                          index: controller.title.length,
-                                        ),
-                                        WaitingRoomTwo(
-                                          controller: controller,
-                                          index: controller.Tekspagedua.length,
-                                        ),
-                                        WaitingRoomThree(),
-                                        WaitingRoomFour(),
-                                        WaitingRoomFive(),
-                                        WaitingRoomSix(),
-                                        WaitingRoomSeven()
-                                      ],
-                                    ),
+                                  // width: 120,
+                                  height: 620,
+                                  child: PageView.builder(
+                                    itemCount: controller.PageList.length,
+                                    controller: controller.pageController,
+                                    scrollBehavior: CustomDisableGlowBehavior(),
+                                    physics: ScrollPhysics(),
+                                    itemBuilder: (context, position) {
+                                      return controller.PageList[position];
+                                    },
                                   ),
                                 ),
                               ],

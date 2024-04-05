@@ -1,9 +1,16 @@
 import 'package:internship/src/core/base_import.dart';
+import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_five.dart';
+import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_four.dart';
+import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_one.dart';
+import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_seven.dart';
+import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_six.dart';
+import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_three.dart';
+import 'package:internship/src/views/krisna/waitingRoom/section/waiting_room_two.dart';
 
 class WaitingController extends BaseController {
   PageController pageController = PageController();
   bool canPop = true;
-  
+
   List<String> title = [
     'Tes Wawasan\nKebangsaan',
     'Tes Intelegensi\nUmum',
@@ -17,6 +24,16 @@ class WaitingController extends BaseController {
     'Persiapkan Perlengkapan Yang\ndipersyaratkan (pakaian Sesuai\nPersyaratan, Sepatu Yang Nyaman,\nDll)',
     'Survai lokasi sehari sebelum tes\n(pastikan waktu perjalanan,\ncara mencapai tempat, parkir, dll)',
     'Hadir di tempat sesuai waktu yang\ndipersyaratkan (60-90 menit\nsebelum seleksi dimulai)',
+  ];
+
+  var PageList = [
+    WaitingRoomOne(),
+    WaitingRoomTwo(),
+    WaitingRoomThree(),
+    WaitingRoomFour(),
+    WaitingRoomFive(),
+    WaitingRoomSix(),
+    WaitingRoomSeven()
   ];
 
   @override

@@ -34,7 +34,7 @@ class WaitingRoomThree extends StatelessWidget {
           ),
           SizedBox(height: 32),
           Container(
-            height: 420,
+            height: 428,
             child: SingleChildScrollView(
               child: Column(
                 children: [
