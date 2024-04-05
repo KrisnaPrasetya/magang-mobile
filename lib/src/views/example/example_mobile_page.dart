@@ -1,6 +1,5 @@
 import 'package:internship/src/core/base_import.dart';
 import 'package:internship/src/views/example/example_controller.dart';
-import 'package:internship/src/views/krisna/rangking/item/popup1_item.dart';
 
 class ExampleMobilePage extends StatelessWidget {
   ExampleMobilePage({Key? key}) : super(key: key);
@@ -45,14 +44,6 @@ class ExampleMobilePage extends StatelessWidget {
                     ElevatedButton(
                       onPressed: controller.goToPayment,
                       child: Text('Payment'),
-                    ),
-                    ElevatedButton(
-                      onPressed: controller.goToWaiting,
-                      child: Text('Waiting'),
-                    ),
-                    ElevatedButton(
-                      onPressed: controller.goToWaiting,
-                      child: Text('Waiting'),
                     ),
                   ],
                 ),
