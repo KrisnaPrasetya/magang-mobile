@@ -1,15 +1,15 @@
 import 'package:internship/src/core/base_import.dart';
-import 'package:internship/src/views/krisna/payment/payment_controller.dart';
-import 'package:internship/src/views/krisna/payment/payment_mobile_page.dart';
+import 'package:internship/src/views/gungsatria/payment/payment_controller.dart';
+import 'package:internship/src/views/gungsatria/payment/payment_mobile_page.dart';
 
 class PaymentView extends StatelessWidget {
   const PaymentView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return BaseWidget<BMIController>(
+    return BaseWidget<PaymentController>(
       backgroundColor: ColorStyle.whiteColor,
-      controller: BMIController(),
+      controller: PaymentController(),
       appBar: AppBar(
         backgroundColor: ColorStyle.whiteColor,
         systemOverlayStyle: SystemUiOverlayStyle(
